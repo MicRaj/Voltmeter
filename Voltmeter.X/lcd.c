@@ -2,6 +2,7 @@
 #include <xc.h>
 #include <stdlib.h>
 
+
 // Set the bits on the LCD port
 void Lcd_Port(char a)
 {

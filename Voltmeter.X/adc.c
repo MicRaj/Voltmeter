@@ -2,8 +2,6 @@
 #include <xc.h>
 #include <stdlib.h>
 
-
-// asdfasdfssdf
 // Read a single sample from the ADC
 unsigned int readADC()
 {

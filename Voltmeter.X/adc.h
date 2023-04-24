@@ -5,9 +5,9 @@
 #define _XTAL_FREQ  4000000
 
 // Define the ping connections
-#define CS RA0
-#define CLK RA1
-#define DIN RA2
+#define CS RB7
+#define CLK RB5
+#define DIN RB6
 
 // Read a single (8-bit) sample from the ADC
 unsigned int readADC();

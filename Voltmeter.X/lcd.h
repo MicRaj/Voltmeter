@@ -12,9 +12,9 @@
 #define _XTAL_FREQ  4000000
 
 // Define the pin connections
-#define RS RB4
-#define RW RB5
-#define EN RB6
+#define RS RA0
+#define RW RA1
+#define EN RA2
 #define D4 RB0
 #define D5 RB1
 #define D6 RB2
