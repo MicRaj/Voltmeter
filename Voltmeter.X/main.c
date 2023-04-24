@@ -43,6 +43,7 @@ void main(void) {
         
         //
         // TODO: Display voltage on LCD
+        //TEST GITHUB
         Lcd_Clear();
         Lcd_Set_Cursor(1, 1);
         Lcd_Write_Int(d1);
