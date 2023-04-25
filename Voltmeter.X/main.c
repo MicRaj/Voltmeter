@@ -25,9 +25,18 @@ unsigned short int upperV = 5; // max voltage value
 void welcomeMessage(void) {
     //On power-up the LCD should display a welcome message to the user that includes the range of possible input voltages.
     Lcd_Clear();
-    Lcd_Set_Cursor(1, 1);
-   // Lcd_Write_String("Hi Min: %d Max: %d ", lowerV, upperV);
-    __delay_ms(1000);
+    Lcd_Set_Cursor(1, 1)
+    Lcd_Write_String("Welcome");
+    __delay_ms(500);
+    Lcd_Clear();
+    Lcd_Write_String(lowerV);
+    Lcd_Set_Cursor(1, 2);
+    Lcd_Write_String('V ');
+    Lcd_Set_Cursor(1,4);
+    Lcd_Write_String(upperV);
+    Lcd_Set_Cursor(1, 5);
+    Lcd_Write_Char('V');
+    __delay_ms(500);
     Lcd_Clear();
 }
 // =====================================================
@@ -53,17 +62,12 @@ void main(void) {
         unsigned short int d1;
         unsigned short int d2;
         unsigned short int d3;
-        
+
         d1 = adcVal / 204;
         d2 = (adcVal % 204)*10/204;
         d3 = ((adcVal*10)%204)*10/204;
-        
-        
-      
-        
+
         // TODO: Display voltage on LCD
-        //TEST GITHUB
-        //TEST GITHUB NO2
         Lcd_Clear();
         Lcd_Set_Cursor(1, 1);
         Lcd_Write_Int(d1);
@@ -75,10 +79,8 @@ void main(void) {
         Lcd_Write_Int(d3);
         // Wait a while
         __delay_ms(200);
-
     }
     return;
 }
 // =====================================================
-
 
