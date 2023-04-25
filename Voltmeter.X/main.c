@@ -1,21 +1,27 @@
-// CONFIG
+// config
+// =====================================================
 #pragma config FOSC = XT
 #pragma config WDTE = OFF
 #pragma config PWRTE = ON
 #pragma config CP = OFF
 
-// Define the oscillator frequency, needed for delays
-#define _XTAL_FREQ  4000000
+#define _XTAL_FREQ  4000000 // clock speed
 
-#include <xc.h>
-// Include ADC and LCD library
+#include <xc.h> // Include ADC and LCD library
 #include "adc.h"
 #include "lcd.h"
-// Storage for the raw ADC value
-unsigned int adcVal = 0;
-// Voltage Value
-unsigned int voltage;
+// =====================================================
 
+// global variables
+// =====================================================
+unsigned int adcVal = 0; // Storage for the raw ADC value
+unsigned int voltage; // Voltage Value
+unsigned int lowerV = 0; // minimum voltage value
+unsigned int upperV = 5; // max voltage value
+// =====================================================
+
+// main
+// =====================================================
 void main(void) {
     TRISB = 0b01000000; // RB7 INPUT
     TRISA = 0b00000;
@@ -26,6 +32,7 @@ void main(void) {
     RW = 0;
     // Init the LCD
     Lcd_Init();
+    welcomeMessage();
     while (1) {
         // Get the current ADC output code as an integer
         adcVal = readADC();
@@ -39,9 +46,6 @@ void main(void) {
         unsigned int decimalpart2 = adcVal - temp - temp2;
         unsigned int d3 = decimalpart2  *500/1020;
         
-        
-        
-        //
         // TODO: Display voltage on LCD
         //TEST GITHUB
         Lcd_Clear();
@@ -59,7 +63,17 @@ void main(void) {
     }
     return;
 }
+// =====================================================
 
+// welcome function
+// =====================================================
 void welcomeMessage(void) {
     //On power-up the LCD should display a welcome message to the user that includes the range of possible input voltages.
+    Lcd_Clear();
+    Lcd_Set_Cursor(1, 1);
+    Lcd_Write_String("Hi Min: %d Max: %d ", lowerV, upperV);
+    __delay_ms(1000);
+    Lcd_Clear();
 }
+// =====================================================
+
