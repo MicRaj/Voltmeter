@@ -23,7 +23,7 @@ unsigned short int adcVal = 0; // Storage for the raw ADC value
 // =====================================================
 void welcomeMessage(void) {
     //On power-up the LCD should display a welcome message to the user that includes the range of possible input voltages.
-    char msg[] = "WelcomeT";
+    char msg[] = "Welcome";
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
@@ -60,11 +60,12 @@ void main(void) {
         // TODO: Convert integer code into integer voltage, see data sheet
         unsigned short int d1;
         unsigned short int d2;
-        unsigned short int d3;
+        //unsigned short int d3;
 
         d1 = adcVal / 204;
-        d2 = (adcVal % 204)*10/204;
-        d3 = ((adcVal*10)%204)*10/204;
+        d2= ((adcVal % 204)/51) *25;
+        //d2 = (adcVal % 204)*10/204;
+        //d3 = ((adcVal*10)%204)*10/204;
 
         // TODO: Display voltage on LCD
         Lcd_Clear();
@@ -74,8 +75,8 @@ void main(void) {
         Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 3);
         Lcd_Write_Int(d2);
-        Lcd_Set_Cursor(1, 4);
-        Lcd_Write_Int(d3);
+        //Lcd_Set_Cursor(1, 4);
+        //Lcd_Write_Int(d3);
         // Wait a while
         __delay_ms(200);
     }

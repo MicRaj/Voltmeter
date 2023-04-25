@@ -72,21 +72,19 @@
 "46
 [v _main main `(v  1 e 1 0 ]
 {
-"63
-[v main@d3 d3 `us  1 a 2 51 ]
 "62
-[v main@d2 d2 `us  1 a 2 49 ]
+[v main@d2 d2 `us  1 a 2 43 ]
 "61
-[v main@d1 d1 `us  1 a 2 47 ]
-"83
+[v main@d1 d1 `us  1 a 2 41 ]
+"84
 } 0
 "24
 [v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
 {
 "26
-[v welcomeMessage@msg msg `[9]uc  1 a 9 14 ]
+[v welcomeMessage@msg msg `[8]uc  1 a 8 14 ]
 "24
-[v welcomeMessage@F325 F325 `[9]uc  1 s 9 F325 ]
+[v welcomeMessage@F325 F325 `[8]uc  1 s 8 F325 ]
 "40
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
@@ -137,19 +135,19 @@
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 9 ]
+[v ___wmul@product product `ui  1 a 2 16 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 5 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 7 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 12 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 14 ]
 "53
 } 0
 "121 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
 [v _Lcd_Write_Int Lcd_Write_Int `(v  1 e 1 0 ]
 {
 "123
-[v Lcd_Write_Int@temp temp `[16]uc  1 a 16 28 ]
+[v Lcd_Write_Int@temp temp `[16]uc  1 a 16 22 ]
 "121
-[v Lcd_Write_Int@a a `ui  1 p 2 26 ]
+[v Lcd_Write_Int@a a `ui  1 p 2 20 ]
 "126
 } 0
 "17 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
@@ -157,15 +155,15 @@
 {
 [v utoa@buf buf `*.4uc  1 a 1 wreg ]
 "19
-[v utoa@v v `ui  1 a 2 22 ]
+[v utoa@v v `ui  1 a 2 16 ]
 "20
-[v utoa@c c `uc  1 a 1 24 ]
+[v utoa@c c `uc  1 a 1 18 ]
 "17
 [v utoa@buf buf `*.4uc  1 a 1 wreg ]
-[v utoa@val val `ui  1 p 2 18 ]
-[v utoa@base base `i  1 p 2 20 ]
+[v utoa@val val `ui  1 p 2 12 ]
+[v utoa@base base `i  1 p 2 14 ]
 "22
-[v utoa@buf buf `*.4uc  1 a 1 25 ]
+[v utoa@buf buf `*.4uc  1 a 1 19 ]
 "37
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
@@ -182,12 +180,12 @@
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwdiv@quotient quotient `ui  1 a 2 15 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
 "11
-[v ___lwdiv@counter counter `uc  1 a 1 17 ]
+[v ___lwdiv@counter counter `uc  1 a 1 11 ]
 "5
-[v ___lwdiv@divisor divisor `ui  1 p 2 11 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 13 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 5 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 7 ]
 "30
 } 0
 "111 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c

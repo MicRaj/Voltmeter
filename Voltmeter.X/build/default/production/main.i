@@ -595,7 +595,7 @@ unsigned short int adcVal = 0;
 
 void welcomeMessage(void) {
 
-    char msg[] = "WelcomeT";
+    char msg[] = "Welcome";
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
@@ -632,11 +632,12 @@ void main(void) {
 
         unsigned short int d1;
         unsigned short int d2;
-        unsigned short int d3;
+
 
         d1 = adcVal / 204;
-        d2 = (adcVal % 204)*10/204;
-        d3 = ((adcVal*10)%204)*10/204;
+        d2= ((adcVal % 204)/51) *25;
+
+
 
 
         Lcd_Clear();
@@ -646,8 +647,8 @@ void main(void) {
         Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 3);
         Lcd_Write_Int(d2);
-        Lcd_Set_Cursor(1, 4);
-        Lcd_Write_Int(d3);
+
+
 
         _delay((unsigned long)((200)*(4000000/4000.0)));
     }

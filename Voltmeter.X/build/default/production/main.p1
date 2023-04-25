@@ -115,11 +115,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _welcomeMessage ]
 [f ]
-[v F325 `uc ~T0 @X0 -> 9 `i s ]
+[v F325 `uc ~T0 @X0 -> 8 `i s ]
 [i F325
 :U ..
 "26
-[; ;main.c: 26:     char msg[] = "WelcomeT";
+[; ;main.c: 26:     char msg[] = "Welcome";
 -> 87 `c
 -> 101 `c
 -> 108 `c
@@ -127,11 +127,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 111 `c
 -> 109 `c
 -> 101 `c
--> 84 `c
 -> 0 `c
 ..
 ]
-[v _msg `uc ~T0 @X0 -> 9 `i a ]
+[v _msg `uc ~T0 @X0 -> 8 `i a ]
 [e = _msg F325 ]
 "27
 [; ;main.c: 27:     Lcd_Clear();
@@ -208,59 +207,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 "62
 [; ;main.c: 62:         unsigned short int d2;
 [v _d2 `us ~T0 @X0 1 a ]
-"63
-[; ;main.c: 63:         unsigned short int d3;
-[v _d3 `us ~T0 @X0 1 a ]
 "65
 [; ;main.c: 65:         d1 = adcVal / 204;
 [e = _d1 -> / -> _adcVal `ui -> -> 204 `i `ui `us ]
 "66
-[; ;main.c: 66:         d2 = (adcVal % 204)*10/204;
-[e = _d2 -> / * % -> _adcVal `ui -> -> 204 `i `ui -> -> 10 `i `ui -> -> 204 `i `ui `us ]
-"67
-[; ;main.c: 67:         d3 = ((adcVal*10)%204)*10/204;
-[e = _d3 -> / * % * -> _adcVal `ui -> -> 10 `i `ui -> -> 204 `i `ui -> -> 10 `i `ui -> -> 204 `i `ui `us ]
-"70
-[; ;main.c: 70:         Lcd_Clear();
-[e ( _Lcd_Clear ..  ]
+[; ;main.c: 66:         d2= ((adcVal % 204)/51) *25;
+[e = _d2 -> * / % -> _adcVal `ui -> -> 204 `i `ui -> -> 51 `i `ui -> -> 25 `i `ui `us ]
 "71
-[; ;main.c: 71:         Lcd_Set_Cursor(1, 1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 71:         Lcd_Clear();
+[e ( _Lcd_Clear ..  ]
 "72
-[; ;main.c: 72:         Lcd_Write_Int(d1);
-[e ( _Lcd_Write_Int (1 -> _d1 `ui ]
+[; ;main.c: 72:         Lcd_Set_Cursor(1, 1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "73
-[; ;main.c: 73:         Lcd_Set_Cursor(1, 2);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 73:         Lcd_Write_Int(d1);
+[e ( _Lcd_Write_Int (1 -> _d1 `ui ]
 "74
-[; ;main.c: 74:         Lcd_Write_Char('.');
-[e ( _Lcd_Write_Char (1 -> -> 46 `ui `uc ]
+[; ;main.c: 74:         Lcd_Set_Cursor(1, 2);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
 "75
-[; ;main.c: 75:         Lcd_Set_Cursor(1, 3);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 3 `i `uc ]
+[; ;main.c: 75:         Lcd_Write_Char('.');
+[e ( _Lcd_Write_Char (1 -> -> 46 `ui `uc ]
 "76
-[; ;main.c: 76:         Lcd_Write_Int(d2);
-[e ( _Lcd_Write_Int (1 -> _d2 `ui ]
+[; ;main.c: 76:         Lcd_Set_Cursor(1, 3);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 3 `i `uc ]
 "77
-[; ;main.c: 77:         Lcd_Set_Cursor(1, 4);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 4 `i `uc ]
-"78
-[; ;main.c: 78:         Lcd_Write_Int(d3);
-[e ( _Lcd_Write_Int (1 -> _d3 `ui ]
-"80
-[; ;main.c: 80:         _delay((unsigned long)((200)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 77:         Lcd_Write_Int(d2);
+[e ( _Lcd_Write_Int (1 -> _d2 `ui ]
 "81
-[; ;main.c: 81:     }
+[; ;main.c: 81:         _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"82
+[; ;main.c: 82:     }
 }
 [e :U 25 ]
 [e $U 26  ]
 [e :U 27 ]
-"82
-[; ;main.c: 82:     return;
-[e $UE 24  ]
 "83
-[; ;main.c: 83: }
+[; ;main.c: 83:     return;
+[e $UE 24  ]
+"84
+[; ;main.c: 84: }
 [e :UE 24 ]
 }
 [a 1C 48 45 53 86 0 ]
