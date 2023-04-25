@@ -13,6 +13,8 @@
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
+[v _strcpy strcpy `(*.4uc  1 e 1 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul8_16.c
@@ -37,9 +39,9 @@
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
 "121
 [v _Lcd_Write_Int Lcd_Write_Int `(v  1 e 1 0 ]
-"25 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+"24 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 [v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
-"38
+"46
 [v _main main `(v  1 e 1 0 ]
 "454 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f84a.h
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
@@ -65,23 +67,40 @@
 [v _RB6 RB6 `VEb  1 e 0 @54 ]
 "692
 [v _RB7 RB7 `VEb  1 e 0 @55 ]
-"17 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+"18 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 [v _adcVal adcVal `us  1 e 2 0 ]
-"38
+"46
 [v _main main `(v  1 e 1 0 ]
 {
-"55
+"63
 [v main@d3 d3 `us  1 a 2 51 ]
-"54
+"62
 [v main@d2 d2 `us  1 a 2 49 ]
-"53
+"61
 [v main@d1 d1 `us  1 a 2 47 ]
-"81
+"83
 } 0
-"25
+"24
 [v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
 {
-"32
+"26
+[v welcomeMessage@msg msg `[9]uc  1 a 9 14 ]
+"24
+[v welcomeMessage@F325 F325 `[9]uc  1 s 9 F325 ]
+"40
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
+[v _strcpy strcpy `(*.4uc  1 e 1 0 ]
+{
+[v strcpy@to to `*.4uc  1 a 1 wreg ]
+"15
+[v strcpy@cp cp `*.4uc  1 a 1 2 ]
+"8
+[v strcpy@to to `*.4uc  1 a 1 wreg ]
+[v strcpy@from from `*.24DCuc  1 p 1 0 ]
+"18
+[v strcpy@to to `*.4uc  1 a 1 1 ]
+"24
 } 0
 "52 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
 [v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]

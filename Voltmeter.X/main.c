@@ -10,33 +10,32 @@
 #include <xc.h> // Include ADC and LCD library
 #include "adc.h"
 #include "lcd.h"
+#include "string.h"
 // =====================================================
 
 // global variables
 // =====================================================
 unsigned short int adcVal = 0; // Storage for the raw ADC value
-unsigned short int voltage; // Voltage Value
-unsigned short int lowerV = 0; // minimum voltage value
-unsigned short int upperV = 5; // max voltage value
+
 // =====================================================
 
 // welcome function
 // =====================================================
 void welcomeMessage(void) {
     //On power-up the LCD should display a welcome message to the user that includes the range of possible input voltages.
+    char msg[] = "WelcomeT";
     Lcd_Clear();
-    Lcd_Set_Cursor(1, 1)
-    Lcd_Write_String("Welcome");
-    __delay_ms(500);
+    Lcd_Set_Cursor(1, 1);
+    Lcd_Write_String(msg);
+    __delay_ms(3000);
     Lcd_Clear();
-    Lcd_Write_String(lowerV);
-    Lcd_Set_Cursor(1, 2);
-    Lcd_Write_String('V ');
-    Lcd_Set_Cursor(1,4);
-    Lcd_Write_String(upperV);
-    Lcd_Set_Cursor(1, 5);
-    Lcd_Write_Char('V');
-    __delay_ms(500);
+    Lcd_Set_Cursor(1, 1);
+    strcpy(msg, "0-5V");    
+ 
+    Lcd_Write_String(msg);
+    __delay_ms(2000);
+    
+
     Lcd_Clear();
 }
 // =====================================================

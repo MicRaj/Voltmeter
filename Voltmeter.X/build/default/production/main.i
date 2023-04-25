@@ -532,24 +532,82 @@ void Lcd_Shift_Right();
 void Lcd_Shift_Left();
 # 12 "main.c" 2
 
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\string.h" 1 3
+
+
+
+
+
+# 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__size_t.h" 1 3
+
+
+
+typedef unsigned size_t;
+# 7 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\string.h" 2 3
+# 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__null.h" 1 3
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\string.h" 2 3
+
+
+
+
+
+
+extern void * memcpy(void *, const void *, size_t);
+extern void * memmove(void *, const void *, size_t);
+extern void * memset(void *, int, size_t);
+# 36 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\string.h" 3
+extern char * strcat(char *, const char *);
+extern char * strcpy(char *, const char *);
+extern char * strncat(char *, const char *, size_t);
+extern char * strncpy(char *, const char *, size_t);
+extern char * strdup(const char *);
+extern char * strtok(char *, const char *);
+
+
+extern int memcmp(const void *, const void *, size_t);
+extern int strcmp(const char *, const char *);
+extern int stricmp(const char *, const char *);
+extern int strncmp(const char *, const char *, size_t);
+extern int strnicmp(const char *, const char *, size_t);
+extern void * memchr(const void *, int, size_t);
+extern size_t strcspn(const char *, const char *);
+extern char * strpbrk(const char *, const char *);
+extern size_t strspn(const char *, const char *);
+extern char * strstr(const char *, const char *);
+extern char * stristr(const char *, const char *);
+extern char * strerror(int);
+extern size_t strlen(const char *);
+extern char * strchr(const char *, int);
+extern char * strichr(const char *, int);
+extern char * strrchr(const char *, int);
+extern char * strrichr(const char *, int);
+# 13 "main.c" 2
+
 
 
 
 
 unsigned short int adcVal = 0;
-unsigned short int voltage;
-unsigned short int lowerV = 0;
-unsigned short int upperV = 5;
+
 
 
 
 
 void welcomeMessage(void) {
 
+    char msg[] = "WelcomeT";
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
+    Lcd_Write_String(msg);
+    _delay((unsigned long)((3000)*(4000000/4000.0)));
+    Lcd_Clear();
+    Lcd_Set_Cursor(1, 1);
+    strcpy(msg, "0-5V");
 
-    _delay((unsigned long)((1000)*(4000000/4000.0)));
+    Lcd_Write_String(msg);
+    _delay((unsigned long)((2000)*(4000000/4000.0)));
+
+
     Lcd_Clear();
 }
 
@@ -581,11 +639,6 @@ void main(void) {
         d3 = ((adcVal*10)%204)*10/204;
 
 
-
-
-
-
-
         Lcd_Clear();
         Lcd_Set_Cursor(1, 1);
         Lcd_Write_Int(d1);
@@ -597,7 +650,6 @@ void main(void) {
         Lcd_Write_Int(d3);
 
         _delay((unsigned long)((200)*(4000000/4000.0)));
-
     }
     return;
 }
