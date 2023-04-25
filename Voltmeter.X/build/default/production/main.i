@@ -8,11 +8,11 @@
 # 2 "<built-in>" 2
 # 1 "main.c" 2
 
+
 #pragma config FOSC = XT
 #pragma config WDTE = OFF
 #pragma config PWRTE = ON
 #pragma config CP = OFF
-
 
 
 
@@ -488,11 +488,10 @@ extern __bank0 __bit __timeout;
 # 28 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
 # 10 "main.c" 2
 
-
 # 1 "./adc.h" 1
 # 13 "./adc.h"
 unsigned int readADC();
-# 12 "main.c" 2
+# 11 "main.c" 2
 
 # 1 "./lcd.h" 1
 
@@ -531,12 +530,32 @@ void Lcd_Write_Int(unsigned int a);
 void Lcd_Shift_Right();
 
 void Lcd_Shift_Left();
-# 13 "main.c" 2
+# 12 "main.c" 2
 
 
-unsigned int adcVal = 0;
 
-unsigned int voltage;
+
+
+unsigned short int adcVal = 0;
+unsigned short int voltage;
+unsigned short int lowerV = 0;
+unsigned short int upperV = 5;
+
+
+
+
+void welcomeMessage(void) {
+
+    Lcd_Clear();
+    Lcd_Set_Cursor(1, 1);
+
+    _delay((unsigned long)((1000)*(4000000/4000.0)));
+    Lcd_Clear();
+}
+
+
+
+
 
 void main(void) {
     TRISB = 0b01000000;
@@ -548,18 +567,20 @@ void main(void) {
     RA1 = 0;
 
     Lcd_Init();
+    welcomeMessage();
     while (1) {
 
         adcVal = readADC();
 
-        unsigned int d1 = adcVal* 5 / 1020;
-        unsigned int temp = d1 * 204 ;
-        unsigned int decimalpart = adcVal - temp;
-        unsigned int d2 = decimalpart *50/1020;
+        unsigned short int d1;
+        unsigned short int d2;
+        unsigned short int d3;
 
-        unsigned int temp2 = d2 * 1020/50 ;
-        unsigned int decimalpart2 = adcVal - temp - temp2;
-        unsigned int d3 = decimalpart2 *500/1020;
+        d1 = adcVal / 204;
+        d2 = (adcVal % 204)*10/204;
+        d3 = ((adcVal*10)%204)*10/204;
+
+
 
 
 
@@ -579,8 +600,4 @@ void main(void) {
 
     }
     return;
-}
-
-void welcomeMessage(void) {
-
 }

@@ -14,14 +14,27 @@
 
 // global variables
 // =====================================================
-unsigned int adcVal = 0; // Storage for the raw ADC value
-unsigned int voltage; // Voltage Value
-unsigned int lowerV = 0; // minimum voltage value
-unsigned int upperV = 5; // max voltage value
+unsigned short int adcVal = 0; // Storage for the raw ADC value
+unsigned short int voltage; // Voltage Value
+unsigned short int lowerV = 0; // minimum voltage value
+unsigned short int upperV = 5; // max voltage value
+// =====================================================
+
+// welcome function
+// =====================================================
+void welcomeMessage(void) {
+    //On power-up the LCD should display a welcome message to the user that includes the range of possible input voltages.
+    Lcd_Clear();
+    Lcd_Set_Cursor(1, 1);
+   // Lcd_Write_String("Hi Min: %d Max: %d ", lowerV, upperV);
+    __delay_ms(1000);
+    Lcd_Clear();
+}
 // =====================================================
 
 // main
 // =====================================================
+
 void main(void) {
     TRISB = 0b01000000; // RB7 INPUT
     TRISA = 0b00000;
@@ -37,14 +50,16 @@ void main(void) {
         // Get the current ADC output code as an integer
         adcVal = readADC();
         // TODO: Convert integer code into integer voltage, see data sheet
-        unsigned int d1 = adcVal* 5 / 1020;
-        unsigned int temp = d1 * 204 ;
-        unsigned int decimalpart = adcVal - temp;
-        unsigned int d2 = decimalpart  *50/1020;
+        unsigned short int d1;
+        unsigned short int d2;
+        unsigned short int d3;
         
-        unsigned int temp2 = d2 * 1020/50 ;
-        unsigned int decimalpart2 = adcVal - temp - temp2;
-        unsigned int d3 = decimalpart2  *500/1020;
+        d1 = adcVal / 204;
+        d2 = (adcVal % 204)*10/204;
+        d3 = ((adcVal*10)%204)*10/204;
+        
+        
+      
         
         // TODO: Display voltage on LCD
         //TEST GITHUB
@@ -66,15 +81,4 @@ void main(void) {
 }
 // =====================================================
 
-// welcome function
-// =====================================================
-void welcomeMessage(void) {
-    //On power-up the LCD should display a welcome message to the user that includes the range of possible input voltages.
-    Lcd_Clear();
-    Lcd_Set_Cursor(1, 1);
-    Lcd_Write_String("Hi Min: %d Max: %d ", lowerV, upperV);
-    __delay_ms(1000);
-    Lcd_Clear();
-}
-// =====================================================
 

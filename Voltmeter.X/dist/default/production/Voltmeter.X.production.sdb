@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F84A ]
 [d frameptr 0 ]
-"6 C:\Users\mrajz\MPLABXProjects\Voltmeter.X\adc.c
+"6 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
 [v _readADC readADC `(ui  1 e 2 0 ]
 "17 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
 [v _utoa utoa `(*.4uc  1 e 1 0 ]
@@ -21,7 +21,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"7 C:\Users\mrajz\MPLABXProjects\Voltmeter.X\lcd.c
+"7 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
 [v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
 "31
 [v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
@@ -37,7 +37,9 @@
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
 "121
 [v _Lcd_Write_Int Lcd_Write_Int `(v  1 e 1 0 ]
-"19 C:\Users\mrajz\MPLABXProjects\Voltmeter.X\main.c
+"25 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+[v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
+"38
 [v _main main `(v  1 e 1 0 ]
 "454 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f84a.h
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
@@ -63,28 +65,45 @@
 [v _RB6 RB6 `VEb  1 e 0 @54 ]
 "692
 [v _RB7 RB7 `VEb  1 e 0 @55 ]
-"15 C:\Users\mrajz\MPLABXProjects\Voltmeter.X\main.c
-[v _adcVal adcVal `ui  1 e 2 0 ]
-"19
+"17 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+[v _adcVal adcVal `us  1 e 2 0 ]
+"38
 [v _main main `(v  1 e 1 0 ]
 {
-"36
-[v main@d2 d2 `ui  1 a 2 55 ]
-"34
-[v main@temp temp `ui  1 a 2 53 ]
-"33
-[v main@d1 d1 `ui  1 a 2 51 ]
-"40
-[v main@d3 d3 `ui  1 a 2 49 ]
-"39
-[v main@decimalpart2 decimalpart2 `ui  1 a 2 47 ]
-"38
-[v main@temp2 temp2 `ui  1 a 2 45 ]
-"35
-[v main@decimalpart decimalpart `ui  1 a 2 43 ]
-"60
+"55
+[v main@d3 d3 `us  1 a 2 51 ]
+"54
+[v main@d2 d2 `us  1 a 2 49 ]
+"53
+[v main@d1 d1 `us  1 a 2 47 ]
+"81
 } 0
-"6 C:\Users\mrajz\MPLABXProjects\Voltmeter.X\adc.c
+"25
+[v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
+{
+"32
+} 0
+"52 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"54
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 9 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 8 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 7 ]
+"52
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 4 ]
+"55
+[v Lcd_Set_Cursor@a a `uc  1 a 1 6 ]
+"71
+} 0
+"44
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+{
+"49
+} 0
+"6 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
 [v _readADC readADC `(ui  1 e 2 0 ]
 {
 "10
@@ -99,19 +118,19 @@
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 4 ]
+[v ___wmul@product product `ui  1 a 2 9 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 5 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 7 ]
 "53
 } 0
-"121 C:\Users\mrajz\MPLABXProjects\Voltmeter.X\lcd.c
+"121 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
 [v _Lcd_Write_Int Lcd_Write_Int `(v  1 e 1 0 ]
 {
 "123
-[v Lcd_Write_Int@temp temp `[16]uc  1 a 16 23 ]
+[v Lcd_Write_Int@temp temp `[16]uc  1 a 16 28 ]
 "121
-[v Lcd_Write_Int@a a `ui  1 p 2 21 ]
+[v Lcd_Write_Int@a a `ui  1 p 2 26 ]
 "126
 } 0
 "17 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
@@ -119,15 +138,15 @@
 {
 [v utoa@buf buf `*.4uc  1 a 1 wreg ]
 "19
-[v utoa@v v `ui  1 a 2 17 ]
+[v utoa@v v `ui  1 a 2 22 ]
 "20
-[v utoa@c c `uc  1 a 1 19 ]
+[v utoa@c c `uc  1 a 1 24 ]
 "17
 [v utoa@buf buf `*.4uc  1 a 1 wreg ]
-[v utoa@val val `ui  1 p 2 13 ]
-[v utoa@base base `i  1 p 2 15 ]
+[v utoa@val val `ui  1 p 2 18 ]
+[v utoa@base base `i  1 p 2 20 ]
 "22
-[v utoa@buf buf `*.4uc  1 a 1 20 ]
+[v utoa@buf buf `*.4uc  1 a 1 25 ]
 "37
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
@@ -144,15 +163,15 @@
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwdiv@quotient quotient `ui  1 a 2 10 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 15 ]
 "11
-[v ___lwdiv@counter counter `uc  1 a 1 12 ]
+[v ___lwdiv@counter counter `uc  1 a 1 17 ]
 "5
-[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 11 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 13 ]
 "30
 } 0
-"111 C:\Users\mrajz\MPLABXProjects\Voltmeter.X\lcd.c
+"111 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
 {
 [v Lcd_Write_String@a a `*.4uc  1 a 1 wreg ]
@@ -177,30 +196,10 @@
 [v Lcd_Write_Char@a a `uc  1 a 1 4 ]
 "108
 } 0
-"52
-[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
-{
-[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
-"54
-[v Lcd_Set_Cursor@temp temp `uc  1 a 1 9 ]
-[v Lcd_Set_Cursor@y y `uc  1 a 1 8 ]
-[v Lcd_Set_Cursor@z z `uc  1 a 1 7 ]
-"52
-[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
-[v Lcd_Set_Cursor@b b `uc  1 p 1 4 ]
-"55
-[v Lcd_Set_Cursor@a a `uc  1 a 1 6 ]
-"71
-} 0
 "74
 [v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
 {
 "91
-} 0
-"44
-[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
-{
-"49
 } 0
 "31
 [v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
