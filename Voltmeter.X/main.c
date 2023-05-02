@@ -6,8 +6,7 @@
 #pragma config CP = OFF
 
 #define _XTAL_FREQ  4000000 // clock speed#
-#define adc1 RB6
-#define adc2 RA3
+
 
 #include <xc.h> // Include ADC and LCD library
 #include "adc.h"
@@ -104,17 +103,24 @@ void main(void) {
             Lcd_Write_Char('.');
             Lcd_Set_Cursor(1, 3);
             Lcd_Write_Int(d2);
-          
+            Lcd_Set_Cursor(1, 6);
+            Lcd_Write_Int(d3);
+            Lcd_Set_Cursor(1, 7);
+            Lcd_Write_Char('.');
+            Lcd_Set_Cursor(1, 8);
+            Lcd_Write_Int(d4);
+            Lcd_Write_Int(d4);
+
         }
 
 
         // Get the current ADC output code as an integer
-        adcVal = readADC(adc1);
+        adcVal = readADC1();
         d1 = adcVal / 204;
-        d2 = ((adcVal % 204) / 51) *25;
-        adcVal = readADC(adc2);
+        d2 = ((adcVal % 204) / 204) *10;
+        adcVal = readADC2();
         d3 = adcVal / 204;
-        d4 = ((adcVal % 204) / 51) *25;
+        d4 = ((adcVal % 204) / 204) *10;
 
 
         Lcd_Clear();
@@ -124,11 +130,11 @@ void main(void) {
         Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 3);
         Lcd_Write_Int(d2);
-        Lcd_Set_Cursor(1, 4);
-        Lcd_Write_Int(d3);
-        Lcd_Set_Cursor(1, 5);
-        Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 6);
+        Lcd_Write_Int(d3);
+        Lcd_Set_Cursor(1, 7);
+        Lcd_Write_Char('.');
+        Lcd_Set_Cursor(1, 8);
         Lcd_Write_Int(d4);
         delay_100ms();
     }

@@ -13,35 +13,35 @@
 %PSECTS
 $dist/default/production\Voltmeter.X.production.o
 cinit CODE 0 C C 16 2 1
-text1 CODE 0 2B8 2B8 2D 2 1
-text2 CODE 0 343 343 18 2 1
-text3 CODE 0 372 372 16 2 1
-text4 CODE 0 3CC 3CC B 2 1
-text5 CODE 0 223 223 32 2 1
-text6 CODE 0 39A 39A E 2 1
-text7 CODE 0 151 151 4B 2 1
-text8 CODE 0 19C 19C 4B 2 1
-text9 CODE 0 308 308 21 2 1
-text10 CODE 0 3A8 3A8 D 2 1
-text11 CODE 0 FD FD 54 2 1
-text12 CODE 0 255 255 32 2 1
-text13 CODE 0 1E7 1E7 3C 2 1
-text14 CODE 0 329 329 1A 2 1
-text15 CODE 0 2E5 2E5 23 2 1
-text16 CODE 0 287 287 31 2 1
-text17 CODE 0 388 388 12 2 1
-text18 CODE 0 35B 35B 17 2 1
-text19 CODE 0 3B5 3B5 C 2 1
-text20 CODE 0 3D7 3D7 A 2 1
-maintext CODE 0 22 22 DB 2 1
+text1 CODE 0 2BD 2BD 2D 2 1
+text2 CODE 0 348 348 18 2 1
+text3 CODE 0 377 377 16 2 1
+text4 CODE 0 3D1 3D1 B 2 1
+text5 CODE 0 228 228 32 2 1
+text6 CODE 0 39F 39F E 2 1
+text7 CODE 0 156 156 4B 2 1
+text8 CODE 0 1A1 1A1 4B 2 1
+text9 CODE 0 30D 30D 21 2 1
+text10 CODE 0 3AD 3AD D 2 1
+text11 CODE 0 102 102 54 2 1
+text12 CODE 0 25A 25A 32 2 1
+text13 CODE 0 1EC 1EC 3C 2 1
+text14 CODE 0 32E 32E 1A 2 1
+text15 CODE 0 2EA 2EA 23 2 1
+text16 CODE 0 28C 28C 31 2 1
+text17 CODE 0 38D 38D 12 2 1
+text18 CODE 0 360 360 17 2 1
+text19 CODE 0 3BA 3BA C 2 1
+text20 CODE 0 3DC 3DC A 2 1
+maintext CODE 0 22 22 E0 2 1
 cstackBANK0 BANK0 1 C C 32 1 1
 intentry CODE 0 4 4 7 2 1
 bssBANK0 BANK0 1 46 46 4 1 1
-idataBANK0 CODE 0 3E1 3E1 8 2 1
-strings STRING 0 3C1 3C1 B 2 1
+idataBANK0 CODE 0 3E6 3E6 8 2 1
+strings STRING 0 3C6 3C6 B 2 1
 dataBANK0 BANK0 1 3E 3E 8 1 1
 config CONFIG 4 2007 2007 1 2 1
-$C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
+$C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
 reset_vec CODE 0 0 0 1 2 1
 end_init CODE 0 B B 1 2 1
 config CONFIG 4 2007 2007 1 2 1
@@ -54,19 +54,19 @@ config CONFIG 4 2007 2007 1 2 1
 RAM 4A-4D 1
 BANK0 4A-4D 1
 CONST 1-3 2
-CONST 3E9-3FF 2
+CONST 3EE-3FF 2
 ENTRY 1-3 2
-ENTRY 3E9-3FF 2
+ENTRY 3EE-3FF 2
 IDLOC 2000-2003 2
 CODE 1-3 2
-CODE 3E9-3FF 2
+CODE 3EE-3FF 2
 SFR0 0-B 1
 SFR1 80-CD 1
 EEDATA 2100-213F 2
 STRCODE 1-3 2
-STRCODE 3E9-3FF 2
+STRCODE 3EE-3FF 2
 STRING 1-3 2
-STRING 3E9-3FF 2
+STRING 3EE-3FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -81,333 +81,334 @@ STRING 3E9-3FF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Voltmeter.X.production.o
-C cinit CODE >340:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-C cinit CODE >343:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-C cinit CODE >366:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-D cinit CODE >367:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-E cinit CODE >368:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-F cinit CODE >369:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-10 cinit CODE >370:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-11 cinit CODE >371:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-12 cinit CODE >372:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-13 cinit CODE >373:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-14 cinit CODE >374:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-15 cinit CODE >375:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-16 cinit CODE >376:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-17 cinit CODE >377:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-18 cinit CODE >378:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-19 cinit CODE >379:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-1A cinit CODE >380:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-1B cinit CODE >381:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-1C cinit CODE >385:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-1D cinit CODE >386:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-1E cinit CODE >387:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-1F cinit CODE >388:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-20 cinit CODE >394:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-20 cinit CODE >396:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-21 cinit CODE >397:C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_1.s
-4 intentry CODE >37:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3D7 text20 CODE >25:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3D7 text20 CODE >26:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3E0 text20 CODE >28:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3B5 text19 CODE >37:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3B5 text19 CODE >39:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3B6 text19 CODE >41:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3B8 text19 CODE >42:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3B9 text19 CODE >44:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-35B text18 CODE >7:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-35D text18 CODE >9:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-35F text18 CODE >10:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-361 text18 CODE >11:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-361 text18 CODE >12:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-362 text18 CODE >14:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-364 text18 CODE >15:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-366 text18 CODE >16:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-366 text18 CODE >17:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-367 text18 CODE >19:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-369 text18 CODE >20:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-36B text18 CODE >21:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-36B text18 CODE >22:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-36C text18 CODE >24:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-36E text18 CODE >25:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-370 text18 CODE >26:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-370 text18 CODE >27:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-371 text18 CODE >28:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-388 text17 CODE >31:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-38A text17 CODE >34:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-38B text17 CODE >35:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-38D text17 CODE >38:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-38E text17 CODE >39:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-397 text17 CODE >40:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-399 text17 CODE >41:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-287 text16 CODE >74:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-287 text16 CODE >76:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-289 text16 CODE >77:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-292 text16 CODE >78:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-294 text16 CODE >79:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-29C text16 CODE >80:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-29E text16 CODE >81:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2A7 text16 CODE >82:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2A9 text16 CODE >84:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2AB text16 CODE >85:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2AD text16 CODE >86:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2AF text16 CODE >87:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2B1 text16 CODE >88:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2B3 text16 CODE >89:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2B5 text16 CODE >90:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2B7 text16 CODE >91:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2E5 text15 CODE >94:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2E6 text15 CODE >97:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2E9 text15 CODE >98:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2EC text15 CODE >99:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2ED text15 CODE >100:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2F0 text15 CODE >100:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2F3 text15 CODE >100:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2F7 text15 CODE >101:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2F8 text15 CODE >102:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2FC text15 CODE >103:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-2FE text15 CODE >104:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-300 text15 CODE >105:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-301 text15 CODE >106:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-305 text15 CODE >107:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-307 text15 CODE >108:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-329 text14 CODE >111:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-32A text14 CODE >114:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-32C text14 CODE >117:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-335 text14 CODE >116:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-33C text14 CODE >117:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-33E text14 CODE >117:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-1E7 text13 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1E7 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1E9 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1ED text13 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1EF text13 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1F1 text13 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1F2 text13 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+C cinit CODE >340:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+C cinit CODE >343:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+C cinit CODE >366:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+D cinit CODE >367:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+E cinit CODE >368:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+F cinit CODE >369:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+10 cinit CODE >370:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+11 cinit CODE >371:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+12 cinit CODE >372:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+13 cinit CODE >373:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+14 cinit CODE >374:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+15 cinit CODE >375:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+16 cinit CODE >376:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+17 cinit CODE >377:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+18 cinit CODE >378:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+19 cinit CODE >379:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+1A cinit CODE >380:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+1B cinit CODE >381:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+1C cinit CODE >385:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+1D cinit CODE >386:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+1E cinit CODE >387:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+1F cinit CODE >388:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+20 cinit CODE >394:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+20 cinit CODE >396:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+21 cinit CODE >397:C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_1.s
+4 intentry CODE >38:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3DC text20 CODE >26:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3DC text20 CODE >27:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3E5 text20 CODE >29:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3BA text19 CODE >38:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3BA text19 CODE >40:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3BB text19 CODE >42:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3BD text19 CODE >43:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3BE text19 CODE >45:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+360 text18 CODE >7:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+362 text18 CODE >9:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+364 text18 CODE >10:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+366 text18 CODE >11:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+366 text18 CODE >12:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+367 text18 CODE >14:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+369 text18 CODE >15:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+36B text18 CODE >16:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+36B text18 CODE >17:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+36C text18 CODE >19:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+36E text18 CODE >20:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+370 text18 CODE >21:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+370 text18 CODE >22:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+371 text18 CODE >24:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+373 text18 CODE >25:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+375 text18 CODE >26:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+375 text18 CODE >27:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+376 text18 CODE >28:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+38D text17 CODE >31:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+38F text17 CODE >34:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+390 text17 CODE >35:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+392 text17 CODE >38:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+393 text17 CODE >39:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+39C text17 CODE >40:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+39E text17 CODE >41:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+28C text16 CODE >74:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+28C text16 CODE >76:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+28E text16 CODE >77:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+297 text16 CODE >78:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+299 text16 CODE >79:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2A1 text16 CODE >80:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2A3 text16 CODE >81:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2AC text16 CODE >82:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2AE text16 CODE >84:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2B0 text16 CODE >85:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2B2 text16 CODE >86:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2B4 text16 CODE >87:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2B6 text16 CODE >88:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2B8 text16 CODE >89:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2BA text16 CODE >90:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2BC text16 CODE >91:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2EA text15 CODE >94:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2EB text15 CODE >97:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2EE text15 CODE >98:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2F1 text15 CODE >99:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2F2 text15 CODE >100:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2F5 text15 CODE >100:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2F8 text15 CODE >100:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2FC text15 CODE >101:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+2FD text15 CODE >102:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+301 text15 CODE >103:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+303 text15 CODE >104:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+305 text15 CODE >105:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+306 text15 CODE >106:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+30A text15 CODE >107:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+30C text15 CODE >108:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+32E text14 CODE >111:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+32F text14 CODE >114:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+331 text14 CODE >117:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+33A text14 CODE >116:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+341 text14 CODE >117:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+343 text14 CODE >117:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+1EC text13 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+1EC text13 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+1EE text13 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+1F2 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+1F4 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 1F6 text13 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1F8 text13 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1FC text13 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1FD text13 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-1FE text13 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+1F7 text13 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+1FB text13 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+1FD text13 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+201 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 202 text13 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-204 text13 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-206 text13 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-20A text13 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-20C text13 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-20F text13 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-212 text13 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-213 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-214 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+203 text13 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+207 text13 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+209 text13 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+20B text13 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+20F text13 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+211 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+214 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+217 text13 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 218 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-21A text13 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-21E text13 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-222 text13 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-255 text12 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-255 text12 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-259 text12 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-25B text12 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-25D text12 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-25E text12 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+219 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+21D text13 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+21F text13 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+223 text13 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+227 text13 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+25A text12 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+25A text12 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+25E text12 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+260 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
 262 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-264 text12 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-268 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-269 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-26B text12 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-26F text12 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-271 text12 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-274 text12 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-277 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-278 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+263 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+267 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+269 text12 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+26D text12 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+26E text12 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+270 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+274 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+276 text12 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+279 text12 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
 27C text12 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-27E text12 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-282 text12 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-286 text12 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-FD text11 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-FE text11 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-102 text11 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-10F text11 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-113 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-117 text11 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-11D text11 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-128 text11 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-135 text11 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-137 text11 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-139 text11 CODE >32:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-13D text11 CODE >33:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-141 text11 CODE >34:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-148 text11 CODE >35:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-14C text11 CODE >36:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-150 text11 CODE >37:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
-3A8 text10 CODE >121:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-3A8 text10 CODE >124:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-3B2 text10 CODE >125:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-3B4 text10 CODE >126:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-308 text9 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-308 text9 CODE >43:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-30A text9 CODE >45:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-30C text9 CODE >46:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-30E text9 CODE >46:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-312 text9 CODE >47:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-313 text9 CODE >47:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+27D text12 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+281 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+283 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+287 text12 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+28B text12 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+102 text11 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+103 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+107 text11 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+114 text11 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+118 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+11C text11 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+122 text11 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+12D text11 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+13A text11 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+13C text11 CODE >31:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+13E text11 CODE >32:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+142 text11 CODE >33:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+146 text11 CODE >34:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+14D text11 CODE >35:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+151 text11 CODE >36:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+155 text11 CODE >37:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
+3AD text10 CODE >121:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+3AD text10 CODE >124:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+3B7 text10 CODE >125:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+3B9 text10 CODE >126:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+30D text9 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+30D text9 CODE >43:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+30F text9 CODE >45:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+311 text9 CODE >46:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+313 text9 CODE >46:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
 317 text9 CODE >47:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-319 text9 CODE >48:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-31A text9 CODE >48:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+318 text9 CODE >47:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+31C text9 CODE >47:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
 31E text9 CODE >48:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-320 text9 CODE >49:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-324 text9 CODE >52:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-328 text9 CODE >53:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
-19C text8 CODE >6:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-19C text8 CODE >8:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-19D text8 CODE >11:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-19E text8 CODE >14:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-19F text8 CODE >16:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1A3 text8 CODE >17:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1A5 text8 CODE >18:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1A9 text8 CODE >19:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1AB text8 CODE >20:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1B1 text8 CODE >20:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1B3 text8 CODE >23:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1B4 text8 CODE >26:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1B8 text8 CODE >27:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1BA text8 CODE >30:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1BE text8 CODE >33:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1C0 text8 CODE >34:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1C3 text8 CODE >36:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1C6 text8 CODE >38:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1CA text8 CODE >39:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1CC text8 CODE >40:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1D2 text8 CODE >40:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1D4 text8 CODE >43:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1D5 text8 CODE >46:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1D8 text8 CODE >46:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1DB text8 CODE >46:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1E2 text8 CODE >47:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-1E6 text8 CODE >48:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-151 text7 CODE >50:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-151 text7 CODE >53:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-152 text7 CODE >56:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-153 text7 CODE >59:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-154 text7 CODE >61:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-158 text7 CODE >62:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-15A text7 CODE >63:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-15E text7 CODE >64:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-160 text7 CODE >65:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-166 text7 CODE >65:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-168 text7 CODE >68:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-169 text7 CODE >71:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-16D text7 CODE >72:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-16F text7 CODE >75:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-173 text7 CODE >78:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-175 text7 CODE >79:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-178 text7 CODE >81:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-17B text7 CODE >83:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-17F text7 CODE >84:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-181 text7 CODE >85:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-187 text7 CODE >85:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-189 text7 CODE >88:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-18A text7 CODE >91:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-18D text7 CODE >91:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-190 text7 CODE >91:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-197 text7 CODE >92:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-19B text7 CODE >93:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
-39A text6 CODE >44:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-39A text6 CODE >46:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-39C text6 CODE >47:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-39E text6 CODE >48:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-3A7 text6 CODE >49:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-223 text5 CODE >52:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-224 text5 CODE >55:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-227 text5 CODE >57:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-22A text5 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-22D text5 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-230 text5 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-234 text5 CODE >59:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-237 text5 CODE >60:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-239 text5 CODE >61:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-23B text5 CODE >62:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-23C text5 CODE >63:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-240 text5 CODE >65:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-243 text5 CODE >66:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-246 text5 CODE >66:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-249 text5 CODE >66:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-24D text5 CODE >67:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-250 text5 CODE >68:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-252 text5 CODE >69:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-254 text5 CODE >71:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
-3CC text4 CODE >25:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3CC text4 CODE >26:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3D6 text4 CODE >28:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-372 text3 CODE >30:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-372 text3 CODE >31:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-374 text3 CODE >32:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-375 text3 CODE >33:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-378 text3 CODE >33:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-381 text3 CODE >33:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-385 text3 CODE >33:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-343 text2 CODE >8:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
-344 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
-346 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
-352 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
-356 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
-35A text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
-2B8 text1 CODE >51:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2B8 text1 CODE >53:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2CD text1 CODE >54:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2CE text1 CODE >55:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+31F text9 CODE >48:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+323 text9 CODE >48:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+325 text9 CODE >49:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+329 text9 CODE >52:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+32D text9 CODE >53:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
+1A1 text8 CODE >6:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1A1 text8 CODE >8:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1A2 text8 CODE >11:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1A3 text8 CODE >14:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1A4 text8 CODE >16:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1A8 text8 CODE >17:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1AA text8 CODE >18:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1AE text8 CODE >19:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1B0 text8 CODE >20:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1B6 text8 CODE >20:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1B8 text8 CODE >23:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1B9 text8 CODE >26:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1BD text8 CODE >27:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1BF text8 CODE >30:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1C3 text8 CODE >33:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1C5 text8 CODE >34:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1C8 text8 CODE >36:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1CB text8 CODE >38:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1CF text8 CODE >39:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1D1 text8 CODE >40:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1D7 text8 CODE >40:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1D9 text8 CODE >43:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1DA text8 CODE >46:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1DD text8 CODE >46:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1E0 text8 CODE >46:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1E7 text8 CODE >47:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1EB text8 CODE >48:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+156 text7 CODE >50:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+156 text7 CODE >52:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+157 text7 CODE >55:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+158 text7 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+159 text7 CODE >60:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+15D text7 CODE >61:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+15F text7 CODE >62:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+163 text7 CODE >63:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+165 text7 CODE >64:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+16B text7 CODE >64:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+16D text7 CODE >67:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+16E text7 CODE >70:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+172 text7 CODE >71:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+174 text7 CODE >74:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+178 text7 CODE >77:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+17A text7 CODE >78:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+17D text7 CODE >80:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+180 text7 CODE >82:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+184 text7 CODE >83:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+186 text7 CODE >84:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+18C text7 CODE >84:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+18E text7 CODE >87:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+18F text7 CODE >90:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+192 text7 CODE >90:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+195 text7 CODE >90:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+19C text7 CODE >91:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+1A0 text7 CODE >92:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+39F text6 CODE >44:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+39F text6 CODE >46:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+3A1 text6 CODE >47:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+3A3 text6 CODE >48:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+3AC text6 CODE >49:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+228 text5 CODE >52:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+229 text5 CODE >55:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+22C text5 CODE >57:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+22F text5 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+232 text5 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+235 text5 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+239 text5 CODE >59:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+23C text5 CODE >60:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+23E text5 CODE >61:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+240 text5 CODE >62:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+241 text5 CODE >63:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+245 text5 CODE >65:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+248 text5 CODE >66:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+24B text5 CODE >66:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+24E text5 CODE >66:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+252 text5 CODE >67:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+255 text5 CODE >68:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+257 text5 CODE >69:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+259 text5 CODE >71:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
+3D1 text4 CODE >26:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3D1 text4 CODE >27:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3DB text4 CODE >29:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+377 text3 CODE >31:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+377 text3 CODE >32:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+379 text3 CODE >33:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+37A text3 CODE >34:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+37D text3 CODE >34:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+386 text3 CODE >34:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+38A text3 CODE >34:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+348 text2 CODE >8:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
+349 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
+34B text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
+357 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
+35B text2 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
+35F text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
+2BD text1 CODE >52:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2BD text1 CODE >54:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2D2 text1 CODE >55:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 2D3 text1 CODE >56:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2D5 text1 CODE >57:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2D6 text1 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2D7 text1 CODE >59:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2D8 text1 CODE >57:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2DA text1 CODE >58:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2DB text1 CODE >59:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 2DC text1 CODE >60:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2E0 text1 CODE >62:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2E2 text1 CODE >63:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2E3 text1 CODE >66:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2E4 text1 CODE >67:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-22 maintext CODE >73:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-22 maintext CODE >75:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-25 maintext CODE >76:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-27 maintext CODE >78:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-29 maintext CODE >79:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2A maintext CODE >81:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2B maintext CODE >85:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2D maintext CODE >87:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2E maintext CODE >89:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-2F maintext CODE >91:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-30 maintext CODE >92:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-31 maintext CODE >98:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-36 maintext CODE >99:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3A maintext CODE >100:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-3F maintext CODE >101:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-43 maintext CODE >102:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-45 maintext CODE >103:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-49 maintext CODE >104:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-4E maintext CODE >105:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-52 maintext CODE >106:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-57 maintext CODE >107:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-5B maintext CODE >108:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-5D maintext CODE >109:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-61 maintext CODE >110:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-66 maintext CODE >98:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-67 maintext CODE >115:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-6C maintext CODE >116:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-79 maintext CODE >117:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-98 maintext CODE >118:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-9D maintext CODE >119:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-AA maintext CODE >120:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-C9 maintext CODE >123:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-CA maintext CODE >124:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-CF maintext CODE >125:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-D4 maintext CODE >126:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-D8 maintext CODE >127:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-DA maintext CODE >128:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-DE maintext CODE >129:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-E3 maintext CODE >130:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-E7 maintext CODE >131:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-EC maintext CODE >132:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-F0 maintext CODE >133:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-F2 maintext CODE >134:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-F6 maintext CODE >135:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-FB maintext CODE >136:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2E1 text1 CODE >61:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2E5 text1 CODE >63:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2E7 text1 CODE >64:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2E8 text1 CODE >67:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2E9 text1 CODE >68:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+22 maintext CODE >74:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+22 maintext CODE >76:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+25 maintext CODE >77:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+27 maintext CODE >79:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+29 maintext CODE >80:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2A maintext CODE >82:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2B maintext CODE >86:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2D maintext CODE >88:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2E maintext CODE >90:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+2F maintext CODE >92:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+30 maintext CODE >93:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+31 maintext CODE >99:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+36 maintext CODE >100:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3A maintext CODE >101:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+3F maintext CODE >102:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+43 maintext CODE >103:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+45 maintext CODE >104:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+49 maintext CODE >105:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+4E maintext CODE >106:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+52 maintext CODE >107:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+57 maintext CODE >108:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+5B maintext CODE >109:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+5D maintext CODE >110:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+61 maintext CODE >111:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+66 maintext CODE >112:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+6B maintext CODE >99:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+6C maintext CODE >118:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+71 maintext CODE >119:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+7E maintext CODE >120:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+9D maintext CODE >121:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+A2 maintext CODE >122:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+AF maintext CODE >123:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+CE maintext CODE >126:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+CF maintext CODE >127:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+D4 maintext CODE >128:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+D9 maintext CODE >129:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+DD maintext CODE >130:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+DF maintext CODE >131:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+E3 maintext CODE >132:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+E8 maintext CODE >133:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+EC maintext CODE >134:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+F1 maintext CODE >135:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+F5 maintext CODE >136:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+F7 maintext CODE >137:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+FB maintext CODE >138:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+100 maintext CODE >139:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -423,78 +424,78 @@ FB maintext CODE >136:C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and i
 ___latbits 0 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 ___lwmod@counter 14 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 __LdataBANK0 0 0 ABS 0 dataBANK0 -
-__Hspace_0 3E9 0 ABS 0 - -
+__Hspace_0 3EE 0 ABS 0 - -
 __Hspace_1 4A 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
 __HidataBANK0 0 0 ABS 0 idataBANK0 -
-_Lcd_Init 50E 0 CODE 0 text16 dist/default/production\Voltmeter.X.production.o
-_Lcd_Port 6B6 0 CODE 0 text18 dist/default/production\Voltmeter.X.production.o
+_Lcd_Init 518 0 CODE 0 text16 dist/default/production\Voltmeter.X.production.o
+_Lcd_Port 6C0 0 CODE 0 text18 dist/default/production\Voltmeter.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
-__end_of_Lcd_Init 570 0 CODE 0 text16 dist/default/production\Voltmeter.X.production.o
-__end_of_Lcd_Port 6E4 0 CODE 0 text18 dist/default/production\Voltmeter.X.production.o
+__end_of_Lcd_Init 57A 0 CODE 0 text16 dist/default/production\Voltmeter.X.production.o
+__end_of_Lcd_Port 6EE 0 CODE 0 text18 dist/default/production\Voltmeter.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-__end_of_welcomeMessage 5CA 0 CODE 0 text1 dist/default/production\Voltmeter.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
+__end_of_welcomeMessage 5D4 0 CODE 0 text1 dist/default/production\Voltmeter.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
 _main 44 0 CODE 0 maintext dist/default/production\Voltmeter.X.production.o
-_utoa 1FA 0 CODE 0 text11 dist/default/production\Voltmeter.X.production.o
+_utoa 204 0 CODE 0 text11 dist/default/production\Voltmeter.X.production.o
 btemp 4E 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
-_Lcd_Write_Char 5CA 0 CODE 0 text15 dist/default/production\Voltmeter.X.production.o
-start 16 0 CODE 0 init C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
+_Lcd_Write_Char 5D4 0 CODE 0 text15 dist/default/production\Voltmeter.X.production.o
+start 16 0 CODE 0 init C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
 Lcd_Port@a 10 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 ?___wmul 1C 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 Lcd_Write_Char@temp 12 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
-_delay_100ms 798 0 CODE 0 text4 dist/default/production\Voltmeter.X.production.o
+_delay_100ms 7A2 0 CODE 0 text4 dist/default/production\Voltmeter.X.production.o
 utoa@c 22 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 utoa@v 20 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
 readADC1@bits 16 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 readADC1@volt 14 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 readADC2@bits 16 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 readADC2@volt 14 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 wtemp0 4E 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-_delay_1000ms 6E4 0 CODE 0 text3 dist/default/production\Voltmeter.X.production.o
+_delay_1000ms 6EE 0 CODE 0 text3 dist/default/production\Voltmeter.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-__end_of_Lcd_Write_Char 610 0 CODE 0 text15 dist/default/production\Voltmeter.X.production.o
+__end_of_Lcd_Write_Char 61A 0 CODE 0 text15 dist/default/production\Voltmeter.X.production.o
 ___wmul@multiplicand 1E 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-__end_of___wmul 652 0 CODE 0 text9 dist/default/production\Voltmeter.X.production.o
+__end_of___wmul 65C 0 CODE 0 text9 dist/default/production\Voltmeter.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 ___lwmod@divisor 10 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-__end_of___lwdiv 446 0 CODE 0 text13 dist/default/production\Voltmeter.X.production.o
-__end_of___lwmod 50E 0 CODE 0 text12 dist/default/production\Voltmeter.X.production.o
+__end_of___lwdiv 450 0 CODE 0 text13 dist/default/production\Voltmeter.X.production.o
+__end_of___lwmod 518 0 CODE 0 text12 dist/default/production\Voltmeter.X.production.o
 welcomeMessage@F331 3E 0 BANK0 1 dataBANK0 dist/default/production\Voltmeter.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
+___stackhi 0 0 ABS 0 - C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
 ___lwdiv@quotient 19 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 Lcd_Set_Cursor@temp 19 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 ___lwmod@dividend 12 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-__end_of_delay_1000ms 710 0 CODE 0 text3 dist/default/production\Voltmeter.X.production.o
+__end_of_delay_1000ms 71A 0 CODE 0 text3 dist/default/production\Voltmeter.X.production.o
 start_initialization 18 0 CODE 0 cinit dist/default/production\Voltmeter.X.production.o
-i1_delay_100ms 7AE 0 CODE 0 text20 dist/default/production\Voltmeter.X.production.o
-_Lcd_Write_String 652 0 CODE 0 text14 dist/default/production\Voltmeter.X.production.o
+i1_delay_100ms 7B8 0 CODE 0 text20 dist/default/production\Voltmeter.X.production.o
+_Lcd_Write_String 65C 0 CODE 0 text14 dist/default/production\Voltmeter.X.production.o
 __pcstackBANK0 C 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 Lcd_Write_Int@a 24 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 welcomeMessage@msg 1E 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 utoa@buf 23 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 utoa@val 1C 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
+___int_sp 0 0 STACK 2 stack C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 BANK1 1 bank1 -
 __Hcinit 44 0 CODE 0 cinit -
-__end_of_strcpy 6B6 0 CODE 0 text2 dist/default/production\Voltmeter.X.production.o
+__end_of_strcpy 6C0 0 CODE 0 text2 dist/default/production\Voltmeter.X.production.o
 __Hstack 0 0 STACK 2 stack -
-__stringbase 78C 0 STRING 0 strings dist/default/production\Voltmeter.X.production.o
+__stringbase 796 0 STRING 0 strings dist/default/production\Voltmeter.X.production.o
 ___lwdiv@counter 1B 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
 __Hcommon 0 0 ABS 0 common -
@@ -516,7 +517,7 @@ __Linit 16 0 CODE 0 init -
 __Lsfr0 0 0 ABS 0 sfr0 -
 __Lsfr1 0 0 ABS 0 sfr1 -
 __Ltext 0 0 ABS 0 text -
-___wmul 610 0 CODE 0 text9 dist/default/production\Voltmeter.X.production.o
+___wmul 61A 0 CODE 0 text9 dist/default/production\Voltmeter.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _RA0 28 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
@@ -530,56 +531,56 @@ _RB4 34 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 _RB5 35 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 _RB6 36 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 _RB7 37 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
-__S0 3E9 0 ABS 0 - -
+__S0 3EE 0 ABS 0 - -
 __S1 4A 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_isr 76A 0 CODE 0 text19 dist/default/production\Voltmeter.X.production.o
+_isr 774 0 CODE 0 text19 dist/default/production\Voltmeter.X.production.o
 _adcVal 48 0 BANK0 1 bssBANK0 dist/default/production\Voltmeter.X.production.o
 saved_w 4E 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 utoa@base 1E 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-__end_of_delay_100ms 7AE 0 CODE 0 text4 dist/default/production\Voltmeter.X.production.o
-__end_of_Lcd_Write_String 686 0 CODE 0 text14 dist/default/production\Voltmeter.X.production.o
+__end_of_delay_100ms 7B8 0 CODE 0 text4 dist/default/production\Voltmeter.X.production.o
+__end_of_Lcd_Write_String 690 0 CODE 0 text14 dist/default/production\Voltmeter.X.production.o
 Lcd_Write_Int@temp 26 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 strcpy@cp 12 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 strcpy@to 11 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-__end_of_isr 782 0 CODE 0 text19 dist/default/production\Voltmeter.X.production.o
-__end_of_Lcd_Clear 750 0 CODE 0 text6 dist/default/production\Voltmeter.X.production.o
+__end_of_isr 78C 0 CODE 0 text19 dist/default/production\Voltmeter.X.production.o
+__end_of_Lcd_Clear 75A 0 CODE 0 text6 dist/default/production\Voltmeter.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-__stringtab 782 0 STRING 0 strings dist/default/production\Voltmeter.X.production.o
+__stringtab 78C 0 STRING 0 strings dist/default/production\Voltmeter.X.production.o
 Lcd_Write_String@a 18 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 Lcd_Write_String@i 16 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\mrajz\AppData\Local\Temp\xcAsvoc.\driver_tmp_12.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\mrajz\AppData\Local\Temp\xcAsu8o.\driver_tmp_12.o
 __pdataBANK0 3E 0 BANK0 1 dataBANK0 dist/default/production\Voltmeter.X.production.o
-__end_of_Lcd_Cmd 734 0 CODE 0 text17 dist/default/production\Voltmeter.X.production.o
-_Lcd_Write_Int 750 0 CODE 0 text10 dist/default/production\Voltmeter.X.production.o
+__end_of_Lcd_Cmd 73E 0 CODE 0 text17 dist/default/production\Voltmeter.X.production.o
+_Lcd_Write_Int 75A 0 CODE 0 text10 dist/default/production\Voltmeter.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
-__end_ofi1_delay_100ms 7C2 0 CODE 0 text20 dist/default/production\Voltmeter.X.production.o
-__ptext10 750 0 CODE 0 text10 dist/default/production\Voltmeter.X.production.o
-__ptext11 1FA 0 CODE 0 text11 dist/default/production\Voltmeter.X.production.o
-__ptext12 4AA 0 CODE 0 text12 dist/default/production\Voltmeter.X.production.o
-__ptext13 3CE 0 CODE 0 text13 dist/default/production\Voltmeter.X.production.o
-__ptext14 652 0 CODE 0 text14 dist/default/production\Voltmeter.X.production.o
-__ptext15 5CA 0 CODE 0 text15 dist/default/production\Voltmeter.X.production.o
-__ptext16 50E 0 CODE 0 text16 dist/default/production\Voltmeter.X.production.o
-__ptext17 710 0 CODE 0 text17 dist/default/production\Voltmeter.X.production.o
-__ptext18 6B6 0 CODE 0 text18 dist/default/production\Voltmeter.X.production.o
-__ptext19 76A 0 CODE 0 text19 dist/default/production\Voltmeter.X.production.o
-__ptext20 7AE 0 CODE 0 text20 dist/default/production\Voltmeter.X.production.o
-_Lcd_Clear 734 0 CODE 0 text6 dist/default/production\Voltmeter.X.production.o
-_Lcd_Set_Cursor 446 0 CODE 0 text5 dist/default/production\Voltmeter.X.production.o
-___lwdiv 3CE 0 CODE 0 text13 dist/default/production\Voltmeter.X.production.o
-___lwmod 4AA 0 CODE 0 text12 dist/default/production\Voltmeter.X.production.o
+__end_ofi1_delay_100ms 7CC 0 CODE 0 text20 dist/default/production\Voltmeter.X.production.o
+__ptext10 75A 0 CODE 0 text10 dist/default/production\Voltmeter.X.production.o
+__ptext11 204 0 CODE 0 text11 dist/default/production\Voltmeter.X.production.o
+__ptext12 4B4 0 CODE 0 text12 dist/default/production\Voltmeter.X.production.o
+__ptext13 3D8 0 CODE 0 text13 dist/default/production\Voltmeter.X.production.o
+__ptext14 65C 0 CODE 0 text14 dist/default/production\Voltmeter.X.production.o
+__ptext15 5D4 0 CODE 0 text15 dist/default/production\Voltmeter.X.production.o
+__ptext16 518 0 CODE 0 text16 dist/default/production\Voltmeter.X.production.o
+__ptext17 71A 0 CODE 0 text17 dist/default/production\Voltmeter.X.production.o
+__ptext18 6C0 0 CODE 0 text18 dist/default/production\Voltmeter.X.production.o
+__ptext19 774 0 CODE 0 text19 dist/default/production\Voltmeter.X.production.o
+__ptext20 7B8 0 CODE 0 text20 dist/default/production\Voltmeter.X.production.o
+_Lcd_Clear 73E 0 CODE 0 text6 dist/default/production\Voltmeter.X.production.o
+_Lcd_Set_Cursor 450 0 CODE 0 text5 dist/default/production\Voltmeter.X.production.o
+___lwdiv 3D8 0 CODE 0 text13 dist/default/production\Voltmeter.X.production.o
+___lwmod 4B4 0 CODE 0 text12 dist/default/production\Voltmeter.X.production.o
 __pmaintext 44 0 CODE 0 maintext dist/default/production\Voltmeter.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 ___wmul@multiplier 1C 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 ___lwdiv@divisor 15 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-_strcpy 686 0 CODE 0 text2 dist/default/production\Voltmeter.X.production.o
-_readADC1 338 0 CODE 0 text8 dist/default/production\Voltmeter.X.production.o
-_readADC2 2A2 0 CODE 0 text7 dist/default/production\Voltmeter.X.production.o
-__end_of__stringtab 78E 0 STRING 0 strings dist/default/production\Voltmeter.X.production.o
-__end_of_readADC1 3CE 0 CODE 0 text8 dist/default/production\Voltmeter.X.production.o
-__end_of_readADC2 338 0 CODE 0 text7 dist/default/production\Voltmeter.X.production.o
+_strcpy 690 0 CODE 0 text2 dist/default/production\Voltmeter.X.production.o
+_readADC1 342 0 CODE 0 text8 dist/default/production\Voltmeter.X.production.o
+_readADC2 2AC 0 CODE 0 text7 dist/default/production\Voltmeter.X.production.o
+__end_of__stringtab 798 0 STRING 0 strings dist/default/production\Voltmeter.X.production.o
+__end_of_readADC1 3D8 0 CODE 0 text8 dist/default/production\Voltmeter.X.production.o
+__end_of_readADC2 342 0 CODE 0 text7 dist/default/production\Voltmeter.X.production.o
 strcpy@from 10 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
@@ -594,7 +595,7 @@ __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __Lend_init 16 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization 40 0 CODE 0 cinit dist/default/production\Voltmeter.X.production.o
-__end_of_Lcd_Set_Cursor 4AA 0 CODE 0 text5 dist/default/production\Voltmeter.X.production.o
+__end_of_Lcd_Set_Cursor 4B4 0 CODE 0 text5 dist/default/production\Voltmeter.X.production.o
 __Hintentry 16 0 CODE 0 intentry -
 Lcd_Set_Cursor@a 16 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 Lcd_Set_Cursor@b 14 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
@@ -607,15 +608,15 @@ ___lwdiv@dividend 17 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.p
 __Hreset_vec 2 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 readADC2@rxData 17 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-__ptext1 570 0 CODE 0 text1 dist/default/production\Voltmeter.X.production.o
-__ptext2 686 0 CODE 0 text2 dist/default/production\Voltmeter.X.production.o
-__ptext3 6E4 0 CODE 0 text3 dist/default/production\Voltmeter.X.production.o
-__ptext4 798 0 CODE 0 text4 dist/default/production\Voltmeter.X.production.o
-__ptext5 446 0 CODE 0 text5 dist/default/production\Voltmeter.X.production.o
-__ptext6 734 0 CODE 0 text6 dist/default/production\Voltmeter.X.production.o
-__ptext7 2A2 0 CODE 0 text7 dist/default/production\Voltmeter.X.production.o
-__ptext8 338 0 CODE 0 text8 dist/default/production\Voltmeter.X.production.o
-__ptext9 610 0 CODE 0 text9 dist/default/production\Voltmeter.X.production.o
+__ptext1 57A 0 CODE 0 text1 dist/default/production\Voltmeter.X.production.o
+__ptext2 690 0 CODE 0 text2 dist/default/production\Voltmeter.X.production.o
+__ptext3 6EE 0 CODE 0 text3 dist/default/production\Voltmeter.X.production.o
+__ptext4 7A2 0 CODE 0 text4 dist/default/production\Voltmeter.X.production.o
+__ptext5 450 0 CODE 0 text5 dist/default/production\Voltmeter.X.production.o
+__ptext6 73E 0 CODE 0 text6 dist/default/production\Voltmeter.X.production.o
+__ptext7 2AC 0 CODE 0 text7 dist/default/production\Voltmeter.X.production.o
+__ptext8 342 0 CODE 0 text8 dist/default/production\Voltmeter.X.production.o
+__ptext9 61A 0 CODE 0 text9 dist/default/production\Voltmeter.X.production.o
 _toggleHold 46 0 BANK0 1 bssBANK0 dist/default/production\Voltmeter.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
@@ -625,13 +626,13 @@ __end_of__initialization 40 0 CODE 0 cinit dist/default/production\Voltmeter.X.p
 readADC1@rxData 17 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 Lcd_Cmd@a 13 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
-__pidataBANK0 7C2 0 CODE 0 idataBANK0 dist/default/production\Voltmeter.X.production.o
-__end_of_Lcd_Write_Int 76A 0 CODE 0 text10 dist/default/production\Voltmeter.X.production.o
+__pidataBANK0 7CC 0 CODE 0 idataBANK0 dist/default/production\Voltmeter.X.production.o
+__end_of_Lcd_Write_Int 774 0 CODE 0 text10 dist/default/production\Voltmeter.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\Voltmeter.X.production.o
 __Hend_init 18 0 CODE 0 end_init -
-__end_of_main 1FA 0 CODE 0 maintext dist/default/production\Voltmeter.X.production.o
-__end_of_utoa 2A2 0 CODE 0 text11 dist/default/production\Voltmeter.X.production.o
+__end_of_main 204 0 CODE 0 maintext dist/default/production\Voltmeter.X.production.o
+__end_of_utoa 2AC 0 CODE 0 text11 dist/default/production\Voltmeter.X.production.o
 _TRISA 85 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\Voltmeter.X.production.o
 ?_readADC1 10 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
@@ -641,12 +642,12 @@ __Lram 0 0 ABS 0 ram -
 interrupt_function 8 0 CODE 0 intentry dist/default/production\Voltmeter.X.production.o
 delay_1000ms@i 12 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\Voltmeter.X.production.o
-_welcomeMessage 570 0 CODE 0 text1 dist/default/production\Voltmeter.X.production.o
-_Lcd_Cmd 710 0 CODE 0 text17 dist/default/production\Voltmeter.X.production.o
+_welcomeMessage 57A 0 CODE 0 text1 dist/default/production\Voltmeter.X.production.o
+_Lcd_Cmd 71A 0 CODE 0 text17 dist/default/production\Voltmeter.X.production.o
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __initialization 18 0 CODE 0 cinit dist/default/production\Voltmeter.X.production.o
 __pbssBANK0 46 0 BANK0 1 bssBANK0 dist/default/production\Voltmeter.X.production.o
-__pstrings 782 0 STRING 0 strings dist/default/production\Voltmeter.X.production.o
+__pstrings 78C 0 STRING 0 strings dist/default/production\Voltmeter.X.production.o
 ___wmul@product 20 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 Lcd_Write_Char@a 14 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
 Lcd_Write_Char@y 13 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.production.o
@@ -675,11 +676,11 @@ Lcd_Write_Char@y 13 0 BANK0 1 cstackBANK0 dist/default/production\Voltmeter.X.pr
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text4 0 3CC 798 1D 2
+text4 0 3D1 7A2 1D 2
 cstackBANK0 1 C C 3E 1
-intentry 0 4 8 3BD 2
+intentry 0 4 8 3C2 2
 reset_vec 0 0 0 1 2
-strings 0 3C1 782 B 2
+strings 0 3C6 78C B 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal
