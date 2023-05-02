@@ -16,7 +16,25 @@
 // global variables
 // =====================================================
 unsigned short int adcVal = 0; // Storage for the raw ADC value
+int toggleHold = 0b0;
+// =====================================================
 
+// isr
+// =====================================================
+void delay(){
+    __delay_ms(500);
+    return;
+}
+
+void __interrupt() isr() {
+    // Reset the interrupt flag
+    INTCONbits.INTF = 0;
+    // Toggle the state of LED2, ~ is the complement
+    toggleHold = ~toggleHold;
+    delay();
+    return;
+}
+ 
 // =====================================================
 
 // welcome function
@@ -27,13 +45,13 @@ void welcomeMessage(void) {
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
-    __delay_ms(3000);
+    delay();
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     strcpy(msg, "0-5V");    
  
     Lcd_Write_String(msg);
-    __delay_ms(2000);
+    delay();
     
 
     Lcd_Clear();
@@ -44,7 +62,7 @@ void welcomeMessage(void) {
 // =====================================================
 
 void main(void) {
-    TRISB = 0b01000000; // RB7 INPUT
+    TRISB = 0b01000001; // RB7 INPUT
     TRISA = 0b00000;
     // Set CS high and CLK low for ADC
     CS = 1;
@@ -52,21 +70,40 @@ void main(void) {
     // Set the R/W LCD pin to Write
     RW = 0;
     // Init the LCD
+    
+    // Interrupt on the rising edge
+    OPTION_REGbits.INTEDG = 1;
+    // Enable the external interrupt
+    INTCONbits.INTE = 1;
+    // Global interrupt enable
+    INTCONbits.GIE = 1;
+    
     Lcd_Init();
     welcomeMessage();
+    unsigned short int d1;
+    unsigned short int d2;
     while (1) {
+        while(toggleHold){
+            Lcd_Set_Cursor(1, 1);
+            Lcd_Write_Int(d1);
+            Lcd_Set_Cursor(1, 2);
+            Lcd_Write_Char('.');
+            Lcd_Set_Cursor(1, 3);
+            Lcd_Write_Int(d2);
+        }
+            
+        
         // Get the current ADC output code as an integer
         adcVal = readADC();
         // TODO: Convert integer code into integer voltage, see data sheet
-        unsigned short int d1;
-        unsigned short int d2;
+        
         //unsigned short int d3;
 
         d1 = adcVal / 204;
         d2= ((adcVal % 204)/51) *25;
         //d2 = (adcVal % 204)*10/204;
         //d3 = ((adcVal*10)%204)*10/204;
-
+        
         // TODO: Display voltage on LCD
         Lcd_Clear();
         Lcd_Set_Cursor(1, 1);
@@ -78,8 +115,8 @@ void main(void) {
         //Lcd_Set_Cursor(1, 4);
         //Lcd_Write_Int(d3);
         // Wait a while
-        __delay_ms(200);
-    }
+        delay();
+}
     return;
 }
 // =====================================================
