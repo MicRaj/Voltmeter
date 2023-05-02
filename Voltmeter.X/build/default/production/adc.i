@@ -577,90 +577,87 @@ extern char * ftoa(float f, int * status);
 
 
 
-unsigned int readADC1(){
-  unsigned char bits;
-  unsigned char rxData = 0;
-  unsigned int volt = 0;
 
-  RB7 = 0;
+unsigned int readADC1() {
+    unsigned char bits;
+    unsigned char rxData = 0;
+    unsigned int volt = 0;
 
-
-  for (bits = 0; bits < 3; bits++)
-  {
-      _delay((unsigned long)((100)*(4000000/4000000.0)));
-      RB5 = 1;
-      _delay((unsigned long)((100)*(4000000/4000000.0)));
-      RB5 = 0;
-  }
+    RB7 = 0;
 
 
-  for (bits = 0; bits < 8; bits++)
-  {
-
-    _delay((unsigned long)((100)*(4000000/4000000.0)));
-    RB5 = 1;
-
-
-    rxData = rxData << 1;
-
-
-    if(RB6 == 1)
-      rxData = rxData | 0x01;
-    else
-      rxData = rxData & 0xfe;
-
-    _delay((unsigned long)((100)*(4000000/4000000.0)));
-    RB5 = 0;
+    for (bits = 0; bits < 3; bits++) {
+        _delay((unsigned long)((100)*(4000000/4000000.0)));
+        RB5 = 1;
+        _delay((unsigned long)((100)*(4000000/4000000.0)));
+        RB5 = 0;
     }
 
 
-  RB7 = 1;
+    for (bits = 0; bits < 8; bits++) {
+
+        _delay((unsigned long)((100)*(4000000/4000000.0)));
+        RB5 = 1;
 
 
-  volt = (rxData << 2);
-  return volt;
+        rxData = rxData << 1;
+
+
+        if (RB6 == 1)
+            rxData = rxData | 0x01;
+        else
+            rxData = rxData & 0xfe;
+
+        _delay((unsigned long)((100)*(4000000/4000000.0)));
+        RB5 = 0;
+    }
+
+
+    RB7 = 1;
+
+
+    volt = (rxData << 2);
+    return volt;
 }
 
-unsigned int readADC2(){
-  unsigned char bits;
-  unsigned char rxData = 0;
-  unsigned int volt = 0;
+unsigned int readADC2() {
+    unsigned char bits;
+    unsigned char rxData = 0;
+    unsigned int volt = 0;
 
-  RB7 = 0;
-
-
-  for (bits = 0; bits < 3; bits++)
-  {
-      _delay((unsigned long)((100)*(4000000/4000000.0)));
-      RB5 = 1;
-      _delay((unsigned long)((100)*(4000000/4000000.0)));
-      RB5 = 0;
-  }
+    RB7 = 0;
 
 
-  for (bits = 0; bits < 8; bits++)
-  {
-
-    _delay((unsigned long)((100)*(4000000/4000000.0)));
-    RB5 = 1;
-
-
-    rxData = rxData << 1;
-
-
-    if(RA3 == 1)
-      rxData = rxData | 0x01;
-    else
-      rxData = rxData & 0xfe;
-
-    _delay((unsigned long)((100)*(4000000/4000000.0)));
-    RB5 = 0;
+    for (bits = 0; bits < 3; bits++) {
+        _delay((unsigned long)((100)*(4000000/4000000.0)));
+        RB5 = 1;
+        _delay((unsigned long)((100)*(4000000/4000000.0)));
+        RB5 = 0;
     }
 
 
-  RB7 = 1;
+    for (bits = 0; bits < 8; bits++) {
+
+        _delay((unsigned long)((100)*(4000000/4000000.0)));
+        RB5 = 1;
 
 
-  volt = (rxData << 2);
-  return volt;
+        rxData = rxData << 1;
+
+
+        if (RA3 == 1)
+            rxData = rxData | 0x01;
+        else
+            rxData = rxData & 0xfe;
+
+        _delay((unsigned long)((100)*(4000000/4000000.0)));
+        RB5 = 0;
+    }
+
+
+    RB7 = 1;
+
+
+    volt = (rxData << 2);
+    return volt;
 }

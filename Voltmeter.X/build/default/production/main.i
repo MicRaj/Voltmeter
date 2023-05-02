@@ -17,7 +17,6 @@
 
 
 
-
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -487,13 +486,13 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 11 "main.c" 2
+# 10 "main.c" 2
 
 # 1 "./adc.h" 1
 # 14 "./adc.h"
 unsigned int readADC1();
 unsigned int readADC2();
-# 12 "main.c" 2
+# 11 "main.c" 2
 
 # 1 "./lcd.h" 1
 
@@ -532,7 +531,7 @@ void Lcd_Write_Int(unsigned int a);
 void Lcd_Shift_Right();
 
 void Lcd_Shift_Left();
-# 13 "main.c" 2
+# 12 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\string.h" 1 3
 
@@ -583,15 +582,13 @@ extern char * strchr(const char *, int);
 extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
-# 14 "main.c" 2
-
+# 13 "main.c" 2
 
 
 
 
 unsigned short int adcVal = 0;
 unsigned volatile char toggleHold = 0b0;
-
 
 
 
@@ -621,10 +618,9 @@ void __attribute__((picinterrupt(("")))) isr() {
 
 
 
-
 void welcomeMessage(void) {
 
-    char msg[] = "Hi";
+    char msg[] = "He";
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
@@ -684,11 +680,10 @@ void main(void) {
 
         adcVal = readADC1();
         d1 = adcVal / 204;
-        d2 = ((adcVal % 204)*10/ 204);
+        d2 = ((adcVal % 204)*10 / 204);
         adcVal = readADC2();
         d3 = adcVal / 204;
-        d4 = ((adcVal % 204)*10/ 204);
-
+        d4 = ((adcVal % 204)*10 / 204);
 
         Lcd_Clear();
         Lcd_Set_Cursor(1, 1);
@@ -703,8 +698,7 @@ void main(void) {
         Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 8);
         Lcd_Write_Int(d4);
-        Lcd_Set_Cursor(1, 9);
-        Lcd_Write_Char('V');
+
         delay_100ms();
     }
     return;

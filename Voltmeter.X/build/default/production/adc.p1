@@ -63,221 +63,213 @@ Version 4.0 HI-TECH Software Intermediate Code
 "606
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f84a.h: 606: __asm("EECON2 equ 089h");
 [; <" EECON2 equ 089h ;# ">
-"6 adc.c
-[; ;adc.c: 6: unsigned int readADC1(){
+"7 adc.c
+[; ;adc.c: 7: unsigned int readADC1() {
 [v _readADC1 `(ui ~T0 @X0 1 ef ]
 {
 [e :U _readADC1 ]
 [f ]
-"7
-[; ;adc.c: 7:   unsigned char bits;
-[v _bits `uc ~T0 @X0 1 a ]
 "8
-[; ;adc.c: 8:   unsigned char rxData = 0;
+[; ;adc.c: 8:     unsigned char bits;
+[v _bits `uc ~T0 @X0 1 a ]
+"9
+[; ;adc.c: 9:     unsigned char rxData = 0;
 [v _rxData `uc ~T0 @X0 1 a ]
 [e = _rxData -> -> 0 `i `uc ]
-"9
-[; ;adc.c: 9:   unsigned int volt = 0;
+"10
+[; ;adc.c: 10:     unsigned int volt = 0;
 [v _volt `ui ~T0 @X0 1 a ]
 [e = _volt -> -> 0 `i `ui ]
-"11
-[; ;adc.c: 11:   RB7 = 0;
+"12
+[; ;adc.c: 12:     RB7 = 0;
 [e = _RB7 -> -> 0 `i `b ]
-"14
-[; ;adc.c: 14:   for (bits = 0; bits < 3; bits++)
+"15
+[; ;adc.c: 15:     for (bits = 0; bits < 3; bits++) {
 {
 [e = _bits -> -> 0 `i `uc ]
 [e $ < -> _bits `i -> 3 `i 28  ]
 [e $U 29  ]
 [e :U 28 ]
-"15
-[; ;adc.c: 15:   {
 {
 "16
-[; ;adc.c: 16:       _delay((unsigned long)((100)*(4000000/4000000.0)));
+[; ;adc.c: 16:         _delay((unsigned long)((100)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 "17
-[; ;adc.c: 17:       RB5 = 1;
+[; ;adc.c: 17:         RB5 = 1;
 [e = _RB5 -> -> 1 `i `b ]
 "18
-[; ;adc.c: 18:       _delay((unsigned long)((100)*(4000000/4000000.0)));
+[; ;adc.c: 18:         _delay((unsigned long)((100)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 "19
-[; ;adc.c: 19:       RB5 = 0;
+[; ;adc.c: 19:         RB5 = 0;
 [e = _RB5 -> -> 0 `i `b ]
 "20
-[; ;adc.c: 20:   }
+[; ;adc.c: 20:     }
 }
 [e ++ _bits -> -> 1 `i `uc ]
 [e $ < -> _bits `i -> 3 `i 28  ]
 [e :U 29 ]
 }
 "23
-[; ;adc.c: 23:   for (bits = 0; bits < 8; bits++)
+[; ;adc.c: 23:     for (bits = 0; bits < 8; bits++) {
 {
 [e = _bits -> -> 0 `i `uc ]
 [e $ < -> _bits `i -> 8 `i 31  ]
 [e $U 32  ]
 [e :U 31 ]
-"24
-[; ;adc.c: 24:   {
 {
-"26
-[; ;adc.c: 26:     _delay((unsigned long)((100)*(4000000/4000000.0)));
+"25
+[; ;adc.c: 25:         _delay((unsigned long)((100)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"27
-[; ;adc.c: 27:     RB5 = 1;
+"26
+[; ;adc.c: 26:         RB5 = 1;
 [e = _RB5 -> -> 1 `i `b ]
-"30
-[; ;adc.c: 30:     rxData = rxData << 1;
+"29
+[; ;adc.c: 29:         rxData = rxData << 1;
 [e = _rxData -> << -> _rxData `i -> 1 `i `uc ]
-"33
-[; ;adc.c: 33:     if(RB6 == 1)
+"32
+[; ;adc.c: 32:         if (RB6 == 1)
 [e $ ! == -> _RB6 `i -> 1 `i 34  ]
-"34
-[; ;adc.c: 34:       rxData = rxData | 0x01;
+"33
+[; ;adc.c: 33:             rxData = rxData | 0x01;
 [e = _rxData -> | -> _rxData `i -> 1 `i `uc ]
 [e $U 35  ]
-"35
-[; ;adc.c: 35:     else
+"34
+[; ;adc.c: 34:         else
 [e :U 34 ]
-"36
-[; ;adc.c: 36:       rxData = rxData & 0xfe;
+"35
+[; ;adc.c: 35:             rxData = rxData & 0xfe;
 [e = _rxData -> & -> _rxData `i -> 254 `i `uc ]
 [e :U 35 ]
-"38
-[; ;adc.c: 38:     _delay((unsigned long)((100)*(4000000/4000000.0)));
+"37
+[; ;adc.c: 37:         _delay((unsigned long)((100)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"39
-[; ;adc.c: 39:     RB5 = 0;
+"38
+[; ;adc.c: 38:         RB5 = 0;
 [e = _RB5 -> -> 0 `i `b ]
-"40
-[; ;adc.c: 40:     }
+"39
+[; ;adc.c: 39:     }
 }
 [e ++ _bits -> -> 1 `i `uc ]
 [e $ < -> _bits `i -> 8 `i 31  ]
 [e :U 32 ]
 }
-"43
-[; ;adc.c: 43:   RB7 = 1;
+"42
+[; ;adc.c: 42:     RB7 = 1;
 [e = _RB7 -> -> 1 `i `b ]
-"46
-[; ;adc.c: 46:   volt = (rxData << 2);
+"45
+[; ;adc.c: 45:     volt = (rxData << 2);
 [e = _volt -> << -> _rxData `i -> 2 `i `ui ]
-"47
-[; ;adc.c: 47:   return volt;
+"46
+[; ;adc.c: 46:     return volt;
 [e ) _volt ]
 [e $UE 27  ]
-"48
-[; ;adc.c: 48: }
+"47
+[; ;adc.c: 47: }
 [e :UE 27 ]
 }
-"50
-[; ;adc.c: 50: unsigned int readADC2(){
+"49
+[; ;adc.c: 49: unsigned int readADC2() {
 [v _readADC2 `(ui ~T0 @X0 1 ef ]
 {
 [e :U _readADC2 ]
 [f ]
-"51
-[; ;adc.c: 51:   unsigned char bits;
+"50
+[; ;adc.c: 50:     unsigned char bits;
 [v _bits `uc ~T0 @X0 1 a ]
-"52
-[; ;adc.c: 52:   unsigned char rxData = 0;
+"51
+[; ;adc.c: 51:     unsigned char rxData = 0;
 [v _rxData `uc ~T0 @X0 1 a ]
 [e = _rxData -> -> 0 `i `uc ]
-"53
-[; ;adc.c: 53:   unsigned int volt = 0;
+"52
+[; ;adc.c: 52:     unsigned int volt = 0;
 [v _volt `ui ~T0 @X0 1 a ]
 [e = _volt -> -> 0 `i `ui ]
-"55
-[; ;adc.c: 55:   RB7 = 0;
+"54
+[; ;adc.c: 54:     RB7 = 0;
 [e = _RB7 -> -> 0 `i `b ]
-"58
-[; ;adc.c: 58:   for (bits = 0; bits < 3; bits++)
+"57
+[; ;adc.c: 57:     for (bits = 0; bits < 3; bits++) {
 {
 [e = _bits -> -> 0 `i `uc ]
 [e $ < -> _bits `i -> 3 `i 37  ]
 [e $U 38  ]
 [e :U 37 ]
-"59
-[; ;adc.c: 59:   {
 {
+"58
+[; ;adc.c: 58:         _delay((unsigned long)((100)*(4000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
+"59
+[; ;adc.c: 59:         RB5 = 1;
+[e = _RB5 -> -> 1 `i `b ]
 "60
-[; ;adc.c: 60:       _delay((unsigned long)((100)*(4000000/4000000.0)));
+[; ;adc.c: 60:         _delay((unsigned long)((100)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 "61
-[; ;adc.c: 61:       RB5 = 1;
-[e = _RB5 -> -> 1 `i `b ]
-"62
-[; ;adc.c: 62:       _delay((unsigned long)((100)*(4000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"63
-[; ;adc.c: 63:       RB5 = 0;
+[; ;adc.c: 61:         RB5 = 0;
 [e = _RB5 -> -> 0 `i `b ]
-"64
-[; ;adc.c: 64:   }
+"62
+[; ;adc.c: 62:     }
 }
 [e ++ _bits -> -> 1 `i `uc ]
 [e $ < -> _bits `i -> 3 `i 37  ]
 [e :U 38 ]
 }
-"67
-[; ;adc.c: 67:   for (bits = 0; bits < 8; bits++)
+"65
+[; ;adc.c: 65:     for (bits = 0; bits < 8; bits++) {
 {
 [e = _bits -> -> 0 `i `uc ]
 [e $ < -> _bits `i -> 8 `i 40  ]
 [e $U 41  ]
 [e :U 40 ]
-"68
-[; ;adc.c: 68:   {
 {
-"70
-[; ;adc.c: 70:     _delay((unsigned long)((100)*(4000000/4000000.0)));
+"67
+[; ;adc.c: 67:         _delay((unsigned long)((100)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"71
-[; ;adc.c: 71:     RB5 = 1;
+"68
+[; ;adc.c: 68:         RB5 = 1;
 [e = _RB5 -> -> 1 `i `b ]
-"74
-[; ;adc.c: 74:     rxData = rxData << 1;
+"71
+[; ;adc.c: 71:         rxData = rxData << 1;
 [e = _rxData -> << -> _rxData `i -> 1 `i `uc ]
-"77
-[; ;adc.c: 77:     if(RA3 == 1)
+"74
+[; ;adc.c: 74:         if (RA3 == 1)
 [e $ ! == -> _RA3 `i -> 1 `i 43  ]
-"78
-[; ;adc.c: 78:       rxData = rxData | 0x01;
+"75
+[; ;adc.c: 75:             rxData = rxData | 0x01;
 [e = _rxData -> | -> _rxData `i -> 1 `i `uc ]
 [e $U 44  ]
-"79
-[; ;adc.c: 79:     else
+"76
+[; ;adc.c: 76:         else
 [e :U 43 ]
-"80
-[; ;adc.c: 80:       rxData = rxData & 0xfe;
+"77
+[; ;adc.c: 77:             rxData = rxData & 0xfe;
 [e = _rxData -> & -> _rxData `i -> 254 `i `uc ]
 [e :U 44 ]
-"82
-[; ;adc.c: 82:     _delay((unsigned long)((100)*(4000000/4000000.0)));
+"79
+[; ;adc.c: 79:         _delay((unsigned long)((100)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"83
-[; ;adc.c: 83:     RB5 = 0;
+"80
+[; ;adc.c: 80:         RB5 = 0;
 [e = _RB5 -> -> 0 `i `b ]
-"84
-[; ;adc.c: 84:     }
+"81
+[; ;adc.c: 81:     }
 }
 [e ++ _bits -> -> 1 `i `uc ]
 [e $ < -> _bits `i -> 8 `i 40  ]
 [e :U 41 ]
 }
-"87
-[; ;adc.c: 87:   RB7 = 1;
+"84
+[; ;adc.c: 84:     RB7 = 1;
 [e = _RB7 -> -> 1 `i `b ]
-"90
-[; ;adc.c: 90:   volt = (rxData << 2);
+"87
+[; ;adc.c: 87:     volt = (rxData << 2);
 [e = _volt -> << -> _rxData `i -> 2 `i `ui ]
-"91
-[; ;adc.c: 91:   return volt;
+"88
+[; ;adc.c: 88:     return volt;
 [e ) _volt ]
 [e $UE 36  ]
-"92
-[; ;adc.c: 92: }
+"89
+[; ;adc.c: 89: }
 [e :UE 36 ]
 }

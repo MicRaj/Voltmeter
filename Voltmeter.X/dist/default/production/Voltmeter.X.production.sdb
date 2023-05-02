@@ -3,9 +3,9 @@
 [d edition pro ]
 [d chip 16F84A ]
 [d frameptr 0 ]
-"6 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+"7 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
 [v _readADC1 readADC1 `(ui  1 e 2 0 ]
-"50
+"49
 [v _readADC2 readADC2 `(ui  1 e 2 0 ]
 "17 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
 [v _utoa utoa `(*.4uc  1 e 1 0 ]
@@ -41,16 +41,16 @@
 [v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
 "121
 [v _Lcd_Write_Int Lcd_Write_Int `(v  1 e 1 0 ]
-"26 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+"23 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 [v _delay_100ms delay_100ms `(v  1 e 1 0 ]
 [v i1_delay_100ms delay_100ms `(v  1 e 1 0 ]
-"31
+"28
 [v _delay_1000ms delay_1000ms `(v  1 e 1 0 ]
-"38
+"35
 [v _isr isr `II(v  1 e 1 0 ]
-"52
+"48
 [v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
-"72
+"68
 [v _main main `(v  1 e 1 0 ]
 [s S28 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -109,31 +109,31 @@
 [v _RB6 RB6 `VEb  1 e 0 @54 ]
 "692
 [v _RB7 RB7 `VEb  1 e 0 @55 ]
-"19 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+"17 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 [v _adcVal adcVal `us  1 e 2 0 ]
-"20
+"18
 [v _toggleHold toggleHold `VEuc  1 e 1 0 ]
-"72
+"68
 [v _main main `(v  1 e 1 0 ]
 {
-"95
+"91
 [v main@d4 d4 `us  1 a 2 54 ]
-"94
+"90
 [v main@d3 d3 `us  1 a 2 52 ]
-"93
+"89
 [v main@d2 d2 `us  1 a 2 50 ]
-"92
+"88
 [v main@d1 d1 `us  1 a 2 48 ]
-"138
+"132
 } 0
-"52
+"48
 [v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
 {
-"54
+"50
 [v welcomeMessage@msg msg `[3]uc  1 a 3 14 ]
-"52
+"48
 [v welcomeMessage@F331 F331 `[3]uc  1 s 3 F331 ]
-"66
+"62
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
 [v _strcpy strcpy `(*.4uc  1 e 1 0 ]
@@ -148,17 +148,17 @@
 [v strcpy@to to `*.4uc  1 a 1 5 ]
 "24
 } 0
-"31 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+"28 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 [v _delay_1000ms delay_1000ms `(v  1 e 1 0 ]
 {
-"32
+"29
 [v delay_1000ms@i i `i  1 a 2 6 ]
-"36
+"33
 } 0
-"26
+"23
 [v _delay_100ms delay_100ms `(v  1 e 1 0 ]
 {
-"29
+"26
 } 0
 "52 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
 [v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
@@ -180,27 +180,27 @@
 {
 "49
 } 0
-"50 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
+"49 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\adc.c
 [v _readADC2 readADC2 `(ui  1 e 2 0 ]
 {
-"53
-[v readADC2@volt volt `ui  1 a 2 8 ]
 "52
-[v readADC2@rxData rxData `uc  1 a 1 11 ]
+[v readADC2@volt volt `ui  1 a 2 8 ]
 "51
+[v readADC2@rxData rxData `uc  1 a 1 11 ]
+"50
 [v readADC2@bits bits `uc  1 a 1 10 ]
-"92
+"89
 } 0
-"6
+"7
 [v _readADC1 readADC1 `(ui  1 e 2 0 ]
 {
-"9
+"10
 [v readADC1@volt volt `ui  1 a 2 8 ]
-"8
+"9
 [v readADC1@rxData rxData `uc  1 a 1 11 ]
-"7
+"8
 [v readADC1@bits bits `uc  1 a 1 10 ]
-"48
+"47
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
@@ -307,13 +307,13 @@
 [v Lcd_Port@a a `uc  1 a 1 4 ]
 "28
 } 0
-"38 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+"35 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"45
+"42
 } 0
-"26
+"23
 [v i1_delay_100ms delay_100ms `(v  1 e 1 0 ]
 {
-"29
+"26
 } 0
