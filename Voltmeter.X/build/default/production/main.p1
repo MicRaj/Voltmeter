@@ -373,9 +373,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "111
 [; ;main.c: 111:             Lcd_Write_Int(d4);
 [e ( _Lcd_Write_Int (1 -> _d4 `ui ]
-"112
-[; ;main.c: 112:             Lcd_Write_Int(d4);
-[e ( _Lcd_Write_Int (1 -> _d4 `ui ]
 "114
 [; ;main.c: 114:         }
 }
@@ -391,8 +388,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 119:         d1 = adcVal / 204;
 [e = _d1 -> / -> _adcVal `ui -> -> 204 `i `ui `us ]
 "120
-[; ;main.c: 120:         d2 = ((adcVal % 204) / 204) *10;
-[e = _d2 -> * / % -> _adcVal `ui -> -> 204 `i `ui -> -> 204 `i `ui -> -> 10 `i `ui `us ]
+[; ;main.c: 120:         d2 = ((adcVal % 204) *10/ 204) *10;
+[e = _d2 -> * / * % -> _adcVal `ui -> -> 204 `i `ui -> -> 10 `i `ui -> -> 204 `i `ui -> -> 10 `i `ui `us ]
 "121
 [; ;main.c: 121:         adcVal = readADC2();
 [e = _adcVal -> ( _readADC2 ..  `us ]
@@ -400,8 +397,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 122:         d3 = adcVal / 204;
 [e = _d3 -> / -> _adcVal `ui -> -> 204 `i `ui `us ]
 "123
-[; ;main.c: 123:         d4 = ((adcVal % 204) / 204) *10;
-[e = _d4 -> * / % -> _adcVal `ui -> -> 204 `i `ui -> -> 204 `i `ui -> -> 10 `i `ui `us ]
+[; ;main.c: 123:         d4 = ((adcVal % 204) *10/ 204) *10;
+[e = _d4 -> * / * % -> _adcVal `ui -> -> 204 `i `ui -> -> 10 `i `ui -> -> 204 `i `ui -> -> 10 `i `ui `us ]
 "126
 [; ;main.c: 126:         Lcd_Clear();
 [e ( _Lcd_Clear ..  ]

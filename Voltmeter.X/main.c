@@ -109,7 +109,7 @@ void main(void) {
             Lcd_Write_Char('.');
             Lcd_Set_Cursor(1, 8);
             Lcd_Write_Int(d4);
-            Lcd_Write_Int(d4);
+
 
         }
 
@@ -117,10 +117,10 @@ void main(void) {
         // Get the current ADC output code as an integer
         adcVal = readADC1();
         d1 = adcVal / 204;
-        d2 = ((adcVal % 204) / 204) *10;
+        d2 = ((adcVal % 204) / 51) *25;
         adcVal = readADC2();
         d3 = adcVal / 204;
-        d4 = ((adcVal % 204) / 204) *10;
+        d4 = ((adcVal % 204) / 51) *25;
 
 
         Lcd_Clear();
