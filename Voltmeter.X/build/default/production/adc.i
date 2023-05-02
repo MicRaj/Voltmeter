@@ -8,8 +8,9 @@
 # 2 "<built-in>" 2
 # 1 "adc.c" 2
 # 1 "./adc.h" 1
-# 13 "./adc.h"
-unsigned int readADC();
+# 14 "./adc.h"
+unsigned int readADC1();
+unsigned int readADC2();
 # 1 "adc.c" 2
 
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
@@ -576,8 +577,7 @@ extern char * ftoa(float f, int * status);
 
 
 
-unsigned int readADC()
-{
+unsigned int readADC1(){
   unsigned char bits;
   unsigned char rxData = 0;
   unsigned int volt = 0;
@@ -605,6 +605,50 @@ unsigned int readADC()
 
 
     if(RB6 == 1)
+      rxData = rxData | 0x01;
+    else
+      rxData = rxData & 0xfe;
+
+    _delay((unsigned long)((100)*(4000000/4000000.0)));
+    RB5 = 0;
+    }
+
+
+  RB7 = 1;
+
+
+  volt = (rxData << 2);
+  return volt;
+}
+
+unsigned int readADC2(){
+  unsigned char bits;
+  unsigned char rxData = 0;
+  unsigned int volt = 0;
+
+  RB7 = 0;
+
+
+  for (bits = 0; bits < 3; bits++)
+  {
+      _delay((unsigned long)((100)*(4000000/4000000.0)));
+      RB5 = 1;
+      _delay((unsigned long)((100)*(4000000/4000000.0)));
+      RB5 = 0;
+  }
+
+
+  for (bits = 0; bits < 8; bits++)
+  {
+
+    _delay((unsigned long)((100)*(4000000/4000000.0)));
+    RB5 = 1;
+
+
+    rxData = rxData << 1;
+
+
+    if(RA3 == 1)
       rxData = rxData | 0x01;
     else
       rxData = rxData & 0xfe;

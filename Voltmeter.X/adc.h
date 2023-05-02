@@ -7,7 +7,9 @@
 // Define the ping connections
 #define CS RB7
 #define CLK RB5
-#define DIN RB6
+#define DIN1 RB6
+#define DIN2 RA3
 
 // Read a single (8-bit) sample from the ADC
-unsigned int readADC();
+unsigned int readADC1();
+unsigned int readADC2();
