@@ -17,7 +17,7 @@
 // global variables
 // =====================================================
 unsigned short int adcVal = 0; // Storage for the raw ADC value
-int toggleHold = 0b0;
+unsigned volatile char toggleHold = 0b0;
 // =====================================================
 
 // isr
@@ -46,12 +46,12 @@ void __interrupt() isr() {
 
 // =====================================================
 
-// welcome function asfasd
+// welcome function
 // =====================================================
 
 void welcomeMessage(void) {
     //On power-up the LCD should display a welcome message to the user that includes the range of possible input voltages.
-    char msg[] = "Welcome";
+    char msg[] = "Hi";
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
@@ -62,8 +62,6 @@ void welcomeMessage(void) {
 
     Lcd_Write_String(msg);
     delay_1000ms();
-
-
     Lcd_Clear();
 }
 // =====================================================
@@ -109,18 +107,14 @@ void main(void) {
             Lcd_Write_Char('.');
             Lcd_Set_Cursor(1, 8);
             Lcd_Write_Int(d4);
-
-
         }
-
-
         // Get the current ADC output code as an integer
         adcVal = readADC1();
         d1 = adcVal / 204;
-        d2 = ((adcVal % 204) / 51) *25;
+        d2 = ((adcVal % 204)*10/ 204);
         adcVal = readADC2();
         d3 = adcVal / 204;
-        d4 = ((adcVal % 204) / 51) *25;
+        d4 = ((adcVal % 204)*10/ 204);
 
 
         Lcd_Clear();
@@ -136,6 +130,8 @@ void main(void) {
         Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 8);
         Lcd_Write_Int(d4);
+        Lcd_Set_Cursor(1, 9);
+        Lcd_Write_Char('V');
         delay_100ms();
     }
     return;

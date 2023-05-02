@@ -590,7 +590,7 @@ extern char * strrichr(const char *, int);
 
 
 unsigned short int adcVal = 0;
-int toggleHold = 0b0;
+unsigned volatile char toggleHold = 0b0;
 
 
 
@@ -624,7 +624,7 @@ void __attribute__((picinterrupt(("")))) isr() {
 
 void welcomeMessage(void) {
 
-    char msg[] = "Welcome";
+    char msg[] = "Hi";
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
@@ -635,8 +635,6 @@ void welcomeMessage(void) {
 
     Lcd_Write_String(msg);
     delay_1000ms();
-
-
     Lcd_Clear();
 }
 
@@ -682,18 +680,14 @@ void main(void) {
             Lcd_Write_Char('.');
             Lcd_Set_Cursor(1, 8);
             Lcd_Write_Int(d4);
-
-
         }
-
-
 
         adcVal = readADC1();
         d1 = adcVal / 204;
-        d2 = ((adcVal % 204) *10/ 204) *10;
+        d2 = ((adcVal % 204)*10/ 204);
         adcVal = readADC2();
         d3 = adcVal / 204;
-        d4 = ((adcVal % 204) *10/ 204) *10;
+        d4 = ((adcVal % 204)*10/ 204);
 
 
         Lcd_Clear();
@@ -709,6 +703,8 @@ void main(void) {
         Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 8);
         Lcd_Write_Int(d4);
+        Lcd_Set_Cursor(1, 9);
+        Lcd_Write_Char('V');
         delay_100ms();
     }
     return;
