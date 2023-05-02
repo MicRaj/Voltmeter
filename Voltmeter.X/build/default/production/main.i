@@ -588,6 +588,24 @@ extern char * strrichr(const char *, int);
 
 
 unsigned short int adcVal = 0;
+int toggleHold = 0b0;
+
+
+
+
+void delay(){
+    _delay((unsigned long)((500)*(4000000/4000.0)));
+    return;
+}
+
+void __attribute__((picinterrupt(("")))) isr() {
+
+    INTCONbits.INTF = 0;
+
+    toggleHold = ~toggleHold;
+    delay();
+    return;
+}
 
 
 
@@ -599,13 +617,13 @@ void welcomeMessage(void) {
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
-    _delay((unsigned long)((3000)*(4000000/4000.0)));
+    delay();
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     strcpy(msg, "0-5V");
 
     Lcd_Write_String(msg);
-    _delay((unsigned long)((2000)*(4000000/4000.0)));
+    delay();
 
 
     Lcd_Clear();
@@ -616,7 +634,7 @@ void welcomeMessage(void) {
 
 
 void main(void) {
-    TRISB = 0b01000000;
+    TRISB = 0b01000001;
     TRISA = 0b00000;
 
     RB7 = 1;
@@ -624,14 +642,33 @@ void main(void) {
 
     RA1 = 0;
 
+
+
+    OPTION_REGbits.INTEDG = 1;
+
+    INTCONbits.INTE = 1;
+
+    INTCONbits.GIE = 1;
+
     Lcd_Init();
     welcomeMessage();
+    unsigned short int d1;
+    unsigned short int d2;
     while (1) {
+        while(toggleHold){
+            Lcd_Set_Cursor(1, 1);
+            Lcd_Write_Int(d1);
+            Lcd_Set_Cursor(1, 2);
+            Lcd_Write_Char('.');
+            Lcd_Set_Cursor(1, 3);
+            Lcd_Write_Int(d2);
+        }
+
+
 
         adcVal = readADC();
 
-        unsigned short int d1;
-        unsigned short int d2;
+
 
 
         d1 = adcVal / 204;
@@ -650,7 +687,7 @@ void main(void) {
 
 
 
-        _delay((unsigned long)((200)*(4000000/4000.0)));
-    }
+        delay();
+}
     return;
 }

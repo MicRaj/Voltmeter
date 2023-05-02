@@ -614,24 +614,24 @@ extern char * ftoa(float f, int * status);
 void Lcd_Port(char a)
 {
  if(a & 1)
-  RB0 = 1;
- else
-  RB0 = 0;
-
- if(a & 2)
   RB1 = 1;
  else
   RB1 = 0;
 
- if(a & 4)
+ if(a & 2)
   RB2 = 1;
  else
   RB2 = 0;
 
- if(a & 8)
+ if(a & 4)
   RB3 = 1;
  else
   RB3 = 0;
+
+ if(a & 8)
+  RB4 = 1;
+ else
+  RB4 = 0;
 }
 
 

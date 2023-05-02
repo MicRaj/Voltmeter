@@ -15,10 +15,10 @@
 #define RS RA0
 #define RW RA1
 #define EN RA2
-#define D4 RB0
-#define D5 RB1
-#define D6 RB2
-#define D7 RB3
+#define D4 RB1
+#define D5 RB2
+#define D6 RB3
+#define D7 RB4
 
 // Set the bits on the LCD port
 void Lcd_Port(char a);
