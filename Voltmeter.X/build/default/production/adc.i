@@ -576,8 +576,7 @@ extern char * ftoa(float f, int * status);
 
 
 
-unsigned int readADC()
-{
+unsigned int readADC(int DIN){
   unsigned char bits;
   unsigned char rxData = 0;
   unsigned int volt = 0;
@@ -604,7 +603,7 @@ unsigned int readADC()
     rxData = rxData << 1;
 
 
-    if(RB6 == 1)
+    if(DIN == 1)
       rxData = rxData | 0x01;
     else
       rxData = rxData & 0xfe;

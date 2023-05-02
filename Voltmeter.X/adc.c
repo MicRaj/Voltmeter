@@ -3,8 +3,7 @@
 #include <stdlib.h>
 
 // Read a single sample from the ADC
-unsigned int readADC()
-{
+unsigned int readADC(int DIN){
   unsigned char bits;
   unsigned char rxData = 0;
   unsigned int volt = 0;
@@ -47,3 +46,4 @@ unsigned int readADC()
   volt = (rxData << 2);
   return volt;
 }
+
