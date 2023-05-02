@@ -16,7 +16,21 @@
 // global variables
 // =====================================================
 unsigned short int adcVal = 0; // Storage for the raw ADC value
+int toggleHold = 0b0;
+// =====================================================
 
+// isr
+// =====================================================
+void __interrupt() isr() {
+    // Reset the interrupt flag
+    INTCONbits.INTF = 0;
+    // Toggle the state of LED2, ~ is the complement
+    toggleHold = ~toggleHold;
+    while(toggleHold == false) {
+        delay_ms__(50);
+    }
+    return
+}
 // =====================================================
 
 // welcome function
@@ -52,6 +66,16 @@ void main(void) {
     // Set the R/W LCD pin to Write
     RW = 0;
     // Init the LCD
+    
+    // Reset the external interrupt flag
+    INTCONbits.INTF = 0;
+    // Interrupt on the rising edge
+    OPTION_REGbits.INTEDG = 1;
+    // Enable the external interrupt
+    INTCONbits.INTE = 1;
+    // Global interrupt enable
+    INTCONbits.GIE = 1;
+    
     Lcd_Init();
     welcomeMessage();
     while (1) {
