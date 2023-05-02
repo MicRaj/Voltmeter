@@ -40,13 +40,15 @@
 "121
 [v _Lcd_Write_Int Lcd_Write_Int `(v  1 e 1 0 ]
 "24 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-[v _delay delay `(v  1 e 1 0 ]
-[v i1_delay delay `(v  1 e 1 0 ]
-"29
+[v _delay_100ms delay_100ms `(v  1 e 1 0 ]
+[v i1_delay_100ms delay_100ms `(v  1 e 1 0 ]
+"28
+[v _delay_1000ms delay_1000ms `(v  1 e 1 0 ]
+"36
 [v _isr isr `II(v  1 e 1 0 ]
-"42
+"49
 [v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
-"64
+"71
 [v _main main `(v  1 e 1 0 ]
 [s S28 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -107,39 +109,46 @@
 [v _adcVal adcVal `us  1 e 2 0 ]
 "19
 [v _toggleHold toggleHold `i  1 e 2 0 ]
-"64
+"71
 [v _main main `(v  1 e 1 0 ]
 {
-"84
-[v main@d2 d2 `us  1 a 2 45 ]
-"83
-[v main@d1 d1 `us  1 a 2 43 ]
-"121
+"92
+[v main@d2 d2 `us  1 a 2 44 ]
+"91
+[v main@d1 d1 `us  1 a 2 42 ]
+"129
 } 0
-"42
+"49
 [v _welcomeMessage welcomeMessage `(v  1 e 1 0 ]
 {
-"44
-[v welcomeMessage@msg msg `[8]uc  1 a 8 19 ]
-"42
-[v welcomeMessage@F328 F328 `[8]uc  1 s 8 F328 ]
-"58
+"51
+[v welcomeMessage@msg msg `[8]uc  1 a 8 18 ]
+"49
+[v welcomeMessage@F330 F330 `[8]uc  1 s 8 F330 ]
+"65
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\strcpy.c
 [v _strcpy strcpy `(*.4uc  1 e 1 0 ]
 {
 [v strcpy@to to `*.4uc  1 a 1 wreg ]
 "15
-[v strcpy@cp cp `*.4uc  1 a 1 7 ]
+[v strcpy@cp cp `*.4uc  1 a 1 6 ]
 "8
 [v strcpy@to to `*.4uc  1 a 1 wreg ]
-[v strcpy@from from `*.24DCuc  1 p 1 5 ]
+[v strcpy@from from `*.24DCuc  1 p 1 4 ]
 "18
-[v strcpy@to to `*.4uc  1 a 1 6 ]
+[v strcpy@to to `*.4uc  1 a 1 5 ]
 "24
 } 0
-"24 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
-[v _delay delay `(v  1 e 1 0 ]
+"28 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+[v _delay_1000ms delay_1000ms `(v  1 e 1 0 ]
+{
+"29
+[v delay_1000ms@i i `i  1 a 2 6 ]
+"33
+} 0
+"24
+[v _delay_100ms delay_100ms `(v  1 e 1 0 ]
 {
 "27
 } 0
@@ -148,14 +157,14 @@
 {
 [v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
 "54
-[v Lcd_Set_Cursor@temp temp `uc  1 a 1 14 ]
-[v Lcd_Set_Cursor@y y `uc  1 a 1 13 ]
-[v Lcd_Set_Cursor@z z `uc  1 a 1 12 ]
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 13 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 12 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 11 ]
 "52
 [v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
-[v Lcd_Set_Cursor@b b `uc  1 p 1 9 ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 8 ]
 "55
-[v Lcd_Set_Cursor@a a `uc  1 a 1 11 ]
+[v Lcd_Set_Cursor@a a `uc  1 a 1 10 ]
 "71
 } 0
 "44
@@ -167,30 +176,30 @@
 [v _readADC readADC `(ui  1 e 2 0 ]
 {
 "10
-[v readADC@volt volt `ui  1 a 2 9 ]
+[v readADC@volt volt `ui  1 a 2 8 ]
 "9
-[v readADC@rxData rxData `uc  1 a 1 12 ]
+[v readADC@rxData rxData `uc  1 a 1 11 ]
 "8
-[v readADC@bits bits `uc  1 a 1 11 ]
+[v readADC@bits bits `uc  1 a 1 10 ]
 "49
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 21 ]
+[v ___wmul@product product `ui  1 a 2 20 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 17 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 19 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 16 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 18 ]
 "53
 } 0
 "121 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
 [v _Lcd_Write_Int Lcd_Write_Int `(v  1 e 1 0 ]
 {
 "123
-[v Lcd_Write_Int@temp temp `[16]uc  1 a 16 27 ]
+[v Lcd_Write_Int@temp temp `[16]uc  1 a 16 26 ]
 "121
-[v Lcd_Write_Int@a a `ui  1 p 2 25 ]
+[v Lcd_Write_Int@a a `ui  1 p 2 24 ]
 "126
 } 0
 "17 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\itoa.c
@@ -198,37 +207,37 @@
 {
 [v utoa@buf buf `*.4uc  1 a 1 wreg ]
 "19
-[v utoa@v v `ui  1 a 2 21 ]
+[v utoa@v v `ui  1 a 2 20 ]
 "20
-[v utoa@c c `uc  1 a 1 23 ]
+[v utoa@c c `uc  1 a 1 22 ]
 "17
 [v utoa@buf buf `*.4uc  1 a 1 wreg ]
-[v utoa@val val `ui  1 p 2 17 ]
-[v utoa@base base `i  1 p 2 19 ]
+[v utoa@val val `ui  1 p 2 16 ]
+[v utoa@base base `i  1 p 2 18 ]
 "22
-[v utoa@buf buf `*.4uc  1 a 1 24 ]
+[v utoa@buf buf `*.4uc  1 a 1 23 ]
 "37
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwmod@counter counter `uc  1 a 1 9 ]
+[v ___lwmod@counter counter `uc  1 a 1 8 ]
 "5
-[v ___lwmod@divisor divisor `ui  1 p 2 5 ]
-[v ___lwmod@dividend dividend `ui  1 p 2 7 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 4 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 6 ]
 "25
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwdiv@quotient quotient `ui  1 a 2 14 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 13 ]
 "11
-[v ___lwdiv@counter counter `uc  1 a 1 16 ]
+[v ___lwdiv@counter counter `uc  1 a 1 15 ]
 "5
-[v ___lwdiv@divisor divisor `ui  1 p 2 10 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 12 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 9 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 11 ]
 "30
 } 0
 "111 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\lcd.c
@@ -236,11 +245,11 @@
 {
 [v Lcd_Write_String@a a `*.4uc  1 a 1 wreg ]
 "113
-[v Lcd_Write_String@i i `i  1 a 2 11 ]
+[v Lcd_Write_String@i i `i  1 a 2 10 ]
 "111
 [v Lcd_Write_String@a a `*.4uc  1 a 1 wreg ]
 "114
-[v Lcd_Write_String@a a `*.4uc  1 a 1 13 ]
+[v Lcd_Write_String@a a `*.4uc  1 a 1 12 ]
 "118
 } 0
 "94
@@ -248,12 +257,12 @@
 {
 [v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
 "96
-[v Lcd_Write_Char@y y `uc  1 a 1 8 ]
-[v Lcd_Write_Char@temp temp `uc  1 a 1 7 ]
+[v Lcd_Write_Char@y y `uc  1 a 1 7 ]
+[v Lcd_Write_Char@temp temp `uc  1 a 1 6 ]
 "94
 [v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
 "97
-[v Lcd_Write_Char@a a `uc  1 a 1 9 ]
+[v Lcd_Write_Char@a a `uc  1 a 1 8 ]
 "108
 } 0
 "74
@@ -267,7 +276,7 @@
 [v Lcd_Cmd@a a `uc  1 a 1 wreg ]
 [v Lcd_Cmd@a a `uc  1 a 1 wreg ]
 "34
-[v Lcd_Cmd@a a `uc  1 a 1 8 ]
+[v Lcd_Cmd@a a `uc  1 a 1 7 ]
 "41
 } 0
 "7
@@ -276,16 +285,16 @@
 [v Lcd_Port@a a `uc  1 a 1 wreg ]
 [v Lcd_Port@a a `uc  1 a 1 wreg ]
 "9
-[v Lcd_Port@a a `uc  1 a 1 5 ]
+[v Lcd_Port@a a `uc  1 a 1 4 ]
 "28
 } 0
-"29 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
+"36 C:\Users\mrajz\Documents\UNI\EE10140-Microprocessors and interfacing\Proteus\Voltmeter\Voltmeter.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"36
+"43
 } 0
 "24
-[v i1_delay delay `(v  1 e 1 0 ]
+[v i1_delay_100ms delay_100ms `(v  1 e 1 0 ]
 {
 "27
 } 0

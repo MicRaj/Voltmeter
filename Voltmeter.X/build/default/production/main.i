@@ -593,17 +593,24 @@ int toggleHold = 0b0;
 
 
 
-void delay(){
-    _delay((unsigned long)((500)*(4000000/4000.0)));
+void delay_100ms(){
+    _delay((unsigned long)((100)*(4000000/4000.0)));
     return;
 }
+void delay_1000ms(){
+    for (int i = 0; i < 20; i++) {
+        delay_100ms();
+    }
+    return;
+}
+
 
 void __attribute__((picinterrupt(("")))) isr() {
 
     INTCONbits.INTF = 0;
 
     toggleHold = ~toggleHold;
-    delay();
+    delay_100ms();
     return;
 }
 
@@ -617,13 +624,13 @@ void welcomeMessage(void) {
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
-    delay();
+    delay_1000ms();
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     strcpy(msg, "0-5V");
 
     Lcd_Write_String(msg);
-    delay();
+    delay_1000ms();
 
 
     Lcd_Clear();
@@ -634,6 +641,7 @@ void welcomeMessage(void) {
 
 
 void main(void) {
+
     TRISB = 0b01000001;
     TRISA = 0b00000;
 
@@ -687,7 +695,7 @@ void main(void) {
 
 
 
-        delay();
+        delay_100ms();
 }
     return;
 }

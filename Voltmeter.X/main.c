@@ -21,17 +21,24 @@ int toggleHold = 0b0;
 
 // isr
 // =====================================================
-void delay(){
-    __delay_ms(500);
+void delay_100ms(){
+    __delay_ms(100);
     return;
 }
+void delay_1000ms(){
+    for (int i = 0; i < 20; i++) {
+        delay_100ms();
+    }
+    return;
+}
+
 
 void __interrupt() isr() {
     // Reset the interrupt flag
     INTCONbits.INTF = 0;
     // Toggle the state of LED2, ~ is the complement
     toggleHold = ~toggleHold;
-    delay();
+    delay_100ms();
     return;
 }
  
@@ -45,13 +52,13 @@ void welcomeMessage(void) {
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
-    delay();
+    delay_1000ms();
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     strcpy(msg, "0-5V");    
- 
+    
     Lcd_Write_String(msg);
-    delay();
+    delay_1000ms();
     
 
     Lcd_Clear();
@@ -62,6 +69,7 @@ void welcomeMessage(void) {
 // =====================================================
 
 void main(void) {
+    
     TRISB = 0b01000001; // RB7 INPUT
     TRISA = 0b00000;
     // Set CS high and CLK low for ADC
@@ -115,7 +123,7 @@ void main(void) {
         //Lcd_Set_Cursor(1, 4);
         //Lcd_Write_Int(d3);
         // Wait a while
-        delay();
+        delay_100ms();
 }
     return;
 }
