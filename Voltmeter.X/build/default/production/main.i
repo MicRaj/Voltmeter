@@ -15,8 +15,6 @@
 #pragma config CP = OFF
 
 
-
-
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -486,13 +484,13 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 10 "main.c" 2
+# 8 "main.c" 2
 
 # 1 "./adc.h" 1
 # 14 "./adc.h"
 unsigned int readADC1();
 unsigned int readADC2();
-# 11 "main.c" 2
+# 9 "main.c" 2
 
 # 1 "./lcd.h" 1
 
@@ -531,7 +529,7 @@ void Lcd_Write_Int(unsigned int a);
 void Lcd_Shift_Right();
 
 void Lcd_Shift_Left();
-# 12 "main.c" 2
+# 10 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c90\\string.h" 1 3
 
@@ -582,7 +580,8 @@ extern char * strchr(const char *, int);
 extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
-# 13 "main.c" 2
+# 11 "main.c" 2
+
 
 
 
@@ -593,22 +592,28 @@ unsigned volatile char toggleHold = 0b0;
 
 
 
+
 void delay_100ms() {
     _delay((unsigned long)((100)*(4000000/4000.0)));
     return;
 }
 
-void delay_1000ms() {
+
+void delay_2000ms() {
     for (int i = 0; i < 20; i++) {
         delay_100ms();
     }
     return;
 }
 
+
+
+
+
+
+
 void __attribute__((picinterrupt(("")))) isr() {
-
     INTCONbits.INTF = 0;
-
     toggleHold = ~toggleHold;
     delay_100ms();
     return;
@@ -619,18 +624,16 @@ void __attribute__((picinterrupt(("")))) isr() {
 
 
 void welcomeMessage(void) {
-
-    char msg[] = "He";
+    char msg[] = "Hi";
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     Lcd_Write_String(msg);
-    delay_1000ms();
+    delay_2000ms();
     Lcd_Clear();
     Lcd_Set_Cursor(1, 1);
     strcpy(msg, "0-5V");
-
     Lcd_Write_String(msg);
-    delay_1000ms();
+    delay_2000ms();
     Lcd_Clear();
 }
 
@@ -639,6 +642,7 @@ void welcomeMessage(void) {
 
 
 void main(void) {
+
 
     TRISB = 0b01000001;
     TRISA = 0b01000;
@@ -650,54 +654,65 @@ void main(void) {
 
 
 
+
+
     OPTION_REGbits.INTEDG = 1;
 
     INTCONbits.INTE = 1;
 
     INTCONbits.GIE = 1;
 
+
     Lcd_Init();
     welcomeMessage();
-    unsigned short int d1;
-    unsigned short int d2;
-    unsigned short int d3;
-    unsigned short int d4;
+    unsigned short int ADC1_Digit1;
+    unsigned short int ADC1_Digit2;
+    unsigned short int ADC2_Digit1;
+    unsigned short int ADC2_Digit2;
     while (1) {
         while (toggleHold) {
+
+
             Lcd_Set_Cursor(1, 1);
-            Lcd_Write_Int(d1);
+            Lcd_Write_Int(ADC1_Digit1);
             Lcd_Set_Cursor(1, 2);
             Lcd_Write_Char('.');
             Lcd_Set_Cursor(1, 3);
-            Lcd_Write_Int(d2);
+            Lcd_Write_Int(ADC1_Digit2);
             Lcd_Set_Cursor(1, 6);
-            Lcd_Write_Int(d3);
+            Lcd_Write_Int(ADC2_Digit1);
             Lcd_Set_Cursor(1, 7);
             Lcd_Write_Char('.');
             Lcd_Set_Cursor(1, 8);
-            Lcd_Write_Int(d4);
+            Lcd_Write_Int(ADC2_Digit2);
+
         }
 
+
         adcVal = readADC1();
-        d1 = adcVal / 204;
-        d2 = ((adcVal % 204)*10 / 204);
+        ADC1_Digit1 = adcVal / 204;
+        ADC1_Digit2 = ((adcVal % 204)*10 / 204);
         adcVal = readADC2();
-        d3 = adcVal / 204;
-        d4 = ((adcVal % 204)*10 / 204);
+        ADC2_Digit1 = adcVal / 204;
+        ADC2_Digit2 = ((adcVal % 204)*10 / 204);
+
+
+
+
 
         Lcd_Clear();
         Lcd_Set_Cursor(1, 1);
-        Lcd_Write_Int(d1);
+        Lcd_Write_Int(ADC1_Digit1);
         Lcd_Set_Cursor(1, 2);
         Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 3);
-        Lcd_Write_Int(d2);
+        Lcd_Write_Int(ADC1_Digit2);
         Lcd_Set_Cursor(1, 6);
-        Lcd_Write_Int(d3);
+        Lcd_Write_Int(ADC2_Digit1);
         Lcd_Set_Cursor(1, 7);
         Lcd_Write_Char('.');
         Lcd_Set_Cursor(1, 8);
-        Lcd_Write_Int(d4);
+        Lcd_Write_Int(ADC2_Digit2);
 
         delay_100ms();
     }

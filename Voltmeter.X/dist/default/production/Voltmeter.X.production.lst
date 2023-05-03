@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.41 build 20230208172133 
-                                                                                               Tue May 02 21:02:17 2023
+                                                                                               Wed May 03 13:16:23 2023
 
 Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9 
      1                           	processor	16F84A
@@ -151,7 +151,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    137                           
    138                           ;initializer for welcomeMessage@F331
    139     03C5  3448               	retlw	72
-   140     03C6  3465               	retlw	101
+   140     03C6  3469               	retlw	105
    141     03C7  3400               	retlw	0
    142     000B                     _INTCONbits	set	11
    143     002B                     _RA3	set	43
@@ -238,7 +238,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    224     0000                     ??_utoa:	
    225                           ; 1 bytes @ 0x0
    226                           
-   227     0000                     ??_delay_1000ms:	
+   227     0000                     ??_delay_2000ms:	
    228                           ; 1 bytes @ 0x0
    229                           
    230     0000                     ??_welcomeMessage:	
@@ -277,7 +277,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    263     000C                     ?_delay_100ms:	
    264                           ; 1 bytes @ 0x0
    265                           
-   266     000C                     ?_delay_1000ms:	
+   266     000C                     ?_delay_2000ms:	
    267                           ; 1 bytes @ 0x0
    268                           
    269     000C                     ?_isr:	
@@ -353,7 +353,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    339     0012                     strcpy@cp:	
    340                           ; 1 bytes @ 0x6
    341                           
-   342     0012                     delay_1000ms@i:	
+   342     0012                     delay_2000ms@i:	
    343                           ; 1 bytes @ 0x6
    344                           
    345     0012                     ___lwmod@dividend:	
@@ -504,19 +504,19 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    490                           
    491                           ; 16 bytes @ 0x20
    492     002C                     	ds	16
-   493     003C                     main@d1:
+   493     003C                     main@ADC1_Digit1:
    494                           
    495                           ; 2 bytes @ 0x30
    496     003C                     	ds	2
-   497     003E                     main@d2:
+   497     003E                     main@ADC1_Digit2:
    498                           
    499                           ; 2 bytes @ 0x32
    500     003E                     	ds	2
-   501     0040                     main@d3:
+   501     0040                     main@ADC2_Digit1:
    502                           
    503                           ; 2 bytes @ 0x34
    504     0040                     	ds	2
-   505     0042                     main@d4:
+   505     0042                     main@ADC2_Digit2:
    506                           
    507                           ; 2 bytes @ 0x36
    508     0042                     	ds	2
@@ -528,14 +528,14 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    514 ;;
    515 ;; *************** function _main *****************
    516 ;; Defined at:
-   517 ;;		line 68 in file "main.c"
+   517 ;;		line 71 in file "main.c"
    518 ;; Parameters:    Size  Location     Type
    519 ;;		None
    520 ;; Auto vars:     Size  Location     Type
-   521 ;;  d4              2   54[BANK0 ] unsigned short 
-   522 ;;  d3              2   52[BANK0 ] unsigned short 
-   523 ;;  d2              2   50[BANK0 ] unsigned short 
-   524 ;;  d1              2   48[BANK0 ] unsigned short 
+   521 ;;  ADC2_Digit2     2   54[BANK0 ] unsigned short 
+   522 ;;  ADC2_Digit1     2   52[BANK0 ] unsigned short 
+   523 ;;  ADC1_Digit2     2   50[BANK0 ] unsigned short 
+   524 ;;  ADC1_Digit1     2   48[BANK0 ] unsigned short 
    525 ;; Return value:  Size  Location     Type
    526 ;;                  1    wreg      void 
    527 ;; Registers used:
@@ -573,7 +573,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    559                           ;psect for function _main
    560                           
    561                           
-   562                           ;main.c: 70:     TRISB = 0b01000001;
+   562                           ;main.c: 74:     TRISB = 0b01000001;
    563                           
    564                           ;incstack = 0
    565                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
@@ -581,125 +581,125 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    567     0018  1683               	bsf	3,5	;RP0=1, select bank1
    568     0019  0086               	movwf	6	;volatile
    569                           
-   570                           ;main.c: 71:     TRISA = 0b01000;
+   570                           ;main.c: 75:     TRISA = 0b01000;
    571     001A  3008               	movlw	8
    572     001B  0085               	movwf	5	;volatile
    573                           
-   574                           ;main.c: 73:     RB7 = 1;
+   574                           ;main.c: 77:     RB7 = 1;
    575     001C  1283               	bcf	3,5	;RP0=0, select bank0
    576     001D  1786               	bsf	6,7	;volatile
    577                           
-   578                           ;main.c: 74:     RB5 = 0;
+   578                           ;main.c: 78:     RB5 = 0;
    579     001E  1286               	bcf	6,5	;volatile
    580                           
-   581                           ;main.c: 76:     RA1 = 0;
+   581                           ;main.c: 80:     RA1 = 0;
    582     001F  1085               	bcf	5,1	;volatile
    583                           
-   584                           ;main.c: 80:     OPTION_REGbits.INTEDG = 1;
+   584                           ;main.c: 86:     OPTION_REGbits.INTEDG = 1;
    585     0020  1683               	bsf	3,5	;RP0=1, select bank1
    586     0021  1701               	bsf	1,6	;volatile
    587                           
-   588                           ;main.c: 82:     INTCONbits.INTE = 1;
+   588                           ;main.c: 88:     INTCONbits.INTE = 1;
    589     0022  160B               	bsf	11,4	;volatile
    590                           
-   591                           ;main.c: 84:     INTCONbits.GIE = 1;
+   591                           ;main.c: 90:     INTCONbits.GIE = 1;
    592     0023  178B               	bsf	11,7	;volatile
    593                           
-   594                           ;main.c: 86:     Lcd_Init();
+   594                           ;main.c: 93:     Lcd_Init();
    595     0024  227B               	fcall	_Lcd_Init
    596                           
-   597                           ;main.c: 87:     welcomeMessage();
+   597                           ;main.c: 94:     welcomeMessage();
    598     0025  22F0               	fcall	_welcomeMessage
    599     0026                     l1531:
    600                           
-   601                           ;main.c: 93:         while (toggleHold) {
+   601                           ;main.c: 100:         while (toggleHold) {
    602     0026  1283               	bcf	3,5	;RP0=0, select bank0
    603     0027  0846               	movf	_toggleHold,w	;volatile
    604     0028  1903               	btfsc	3,2
    605     0029  285B               	goto	l1533
    606                           
-   607                           ;main.c: 94:             Lcd_Set_Cursor(1, 1);
+   607                           ;main.c: 103:             Lcd_Set_Cursor(1, 1);
    608     002A  0194               	clrf	Lcd_Set_Cursor@b
    609     002B  0A94               	incf	Lcd_Set_Cursor@b,f
    610     002C  3001               	movlw	1
    611     002D  2217               	fcall	_Lcd_Set_Cursor
    612                           
-   613                           ;main.c: 95:             Lcd_Write_Int(d1);
-   614     002E  083D               	movf	main@d1+1,w
+   613                           ;main.c: 104:             Lcd_Write_Int(ADC1_Digit1);
+   614     002E  083D               	movf	main@ADC1_Digit1+1,w
    615     002F  00AB               	movwf	Lcd_Write_Int@a+1
-   616     0030  083C               	movf	main@d1,w
+   616     0030  083C               	movf	main@ADC1_Digit1,w
    617     0031  00AA               	movwf	Lcd_Write_Int@a
    618     0032  238D               	fcall	_Lcd_Write_Int
    619                           
-   620                           ;main.c: 96:             Lcd_Set_Cursor(1, 2);
+   620                           ;main.c: 105:             Lcd_Set_Cursor(1, 2);
    621     0033  3002               	movlw	2
    622     0034  0094               	movwf	Lcd_Set_Cursor@b
    623     0035  3001               	movlw	1
    624     0036  2217               	fcall	_Lcd_Set_Cursor
    625                           
-   626                           ;main.c: 97:             Lcd_Write_Char('.');
+   626                           ;main.c: 106:             Lcd_Write_Char('.');
    627     0037  302E               	movlw	46
    628     0038  22AC               	fcall	_Lcd_Write_Char
    629                           
-   630                           ;main.c: 98:             Lcd_Set_Cursor(1, 3);
+   630                           ;main.c: 107:             Lcd_Set_Cursor(1, 3);
    631     0039  3003               	movlw	3
    632     003A  0094               	movwf	Lcd_Set_Cursor@b
    633     003B  3001               	movlw	1
    634     003C  2217               	fcall	_Lcd_Set_Cursor
    635                           
-   636                           ;main.c: 99:             Lcd_Write_Int(d2);
-   637     003D  083F               	movf	main@d2+1,w
+   636                           ;main.c: 108:             Lcd_Write_Int(ADC1_Digit2);
+   637     003D  083F               	movf	main@ADC1_Digit2+1,w
    638     003E  00AB               	movwf	Lcd_Write_Int@a+1
-   639     003F  083E               	movf	main@d2,w
+   639     003F  083E               	movf	main@ADC1_Digit2,w
    640     0040  00AA               	movwf	Lcd_Write_Int@a
    641     0041  238D               	fcall	_Lcd_Write_Int
    642                           
-   643                           ;main.c: 100:             Lcd_Set_Cursor(1, 6);
+   643                           ;main.c: 109:             Lcd_Set_Cursor(1, 6);
    644     0042  3006               	movlw	6
    645     0043  0094               	movwf	Lcd_Set_Cursor@b
    646     0044  3001               	movlw	1
    647     0045  2217               	fcall	_Lcd_Set_Cursor
    648                           
-   649                           ;main.c: 101:             Lcd_Write_Int(d3);
-   650     0046  0841               	movf	main@d3+1,w
+   649                           ;main.c: 110:             Lcd_Write_Int(ADC2_Digit1);
+   650     0046  0841               	movf	main@ADC2_Digit1+1,w
    651     0047  00AB               	movwf	Lcd_Write_Int@a+1
-   652     0048  0840               	movf	main@d3,w
+   652     0048  0840               	movf	main@ADC2_Digit1,w
    653     0049  00AA               	movwf	Lcd_Write_Int@a
    654     004A  238D               	fcall	_Lcd_Write_Int
    655                           
-   656                           ;main.c: 102:             Lcd_Set_Cursor(1, 7);
+   656                           ;main.c: 111:             Lcd_Set_Cursor(1, 7);
    657     004B  3007               	movlw	7
    658     004C  0094               	movwf	Lcd_Set_Cursor@b
    659     004D  3001               	movlw	1
    660     004E  2217               	fcall	_Lcd_Set_Cursor
    661                           
-   662                           ;main.c: 103:             Lcd_Write_Char('.');
+   662                           ;main.c: 112:             Lcd_Write_Char('.');
    663     004F  302E               	movlw	46
    664     0050  22AC               	fcall	_Lcd_Write_Char
    665                           
-   666                           ;main.c: 104:             Lcd_Set_Cursor(1, 8);
+   666                           ;main.c: 113:             Lcd_Set_Cursor(1, 8);
    667     0051  3008               	movlw	8
    668     0052  0094               	movwf	Lcd_Set_Cursor@b
    669     0053  3001               	movlw	1
    670     0054  2217               	fcall	_Lcd_Set_Cursor
    671                           
-   672                           ;main.c: 105:             Lcd_Write_Int(d4);
-   673     0055  0843               	movf	main@d4+1,w
+   672                           ;main.c: 114:             Lcd_Write_Int(ADC2_Digit2);
+   673     0055  0843               	movf	main@ADC2_Digit2+1,w
    674     0056  00AB               	movwf	Lcd_Write_Int@a+1
-   675     0057  0842               	movf	main@d4,w
+   675     0057  0842               	movf	main@ADC2_Digit2,w
    676     0058  00AA               	movwf	Lcd_Write_Int@a
    677     0059  238D               	fcall	_Lcd_Write_Int
    678     005A  2826               	goto	l1531
    679     005B                     l1533:
    680                           
-   681                           ;main.c: 108:         adcVal = readADC1();
+   681                           ;main.c: 119:         adcVal = readADC1();
    682     005B  2190               	fcall	_readADC1
    683     005C  0811               	movf	?_readADC1+1,w
    684     005D  00C5               	movwf	_adcVal+1
    685     005E  0810               	movf	?_readADC1,w
    686     005F  00C4               	movwf	_adcVal
    687                           
-   688                           ;main.c: 109:         d1 = adcVal / 204;
+   688                           ;main.c: 120:         ADC1_Digit1 = adcVal / 204;
    689     0060  30CC               	movlw	204
    690     0061  009B               	movwf	___lwdiv@divisor
    691     0062  3000               	movlw	0
@@ -710,11 +710,11 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    696     0067  009D               	movwf	___lwdiv@dividend
    697     0068  21DB               	fcall	___lwdiv
    698     0069  081C               	movf	?___lwdiv+1,w
-   699     006A  00BD               	movwf	main@d1+1
+   699     006A  00BD               	movwf	main@ADC1_Digit1+1
    700     006B  081B               	movf	?___lwdiv,w
-   701     006C  00BC               	movwf	main@d1
+   701     006C  00BC               	movwf	main@ADC1_Digit1
    702                           
-   703                           ;main.c: 110:         d2 = ((adcVal % 204)*10 / 204);
+   703                           ;main.c: 121:         ADC1_Digit2 = ((adcVal % 204)*10 / 204);
    704     006D  30CC               	movlw	204
    705     006E  009B               	movwf	___lwdiv@divisor
    706     006F  3000               	movlw	0
@@ -743,18 +743,18 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    729     0086  009D               	movwf	___lwdiv@dividend
    730     0087  21DB               	fcall	___lwdiv
    731     0088  081C               	movf	?___lwdiv+1,w
-   732     0089  00BF               	movwf	main@d2+1
+   732     0089  00BF               	movwf	main@ADC1_Digit2+1
    733     008A  081B               	movf	?___lwdiv,w
-   734     008B  00BE               	movwf	main@d2
+   734     008B  00BE               	movwf	main@ADC1_Digit2
    735                           
-   736                           ;main.c: 111:         adcVal = readADC2();
+   736                           ;main.c: 122:         adcVal = readADC2();
    737     008C  2145               	fcall	_readADC2
    738     008D  0811               	movf	?_readADC2+1,w
    739     008E  00C5               	movwf	_adcVal+1
    740     008F  0810               	movf	?_readADC2,w
    741     0090  00C4               	movwf	_adcVal
    742                           
-   743                           ;main.c: 112:         d3 = adcVal / 204;
+   743                           ;main.c: 123:         ADC2_Digit1 = adcVal / 204;
    744     0091  30CC               	movlw	204
    745     0092  009B               	movwf	___lwdiv@divisor
    746     0093  3000               	movlw	0
@@ -765,11 +765,11 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    751     0098  009D               	movwf	___lwdiv@dividend
    752     0099  21DB               	fcall	___lwdiv
    753     009A  081C               	movf	?___lwdiv+1,w
-   754     009B  00C1               	movwf	main@d3+1
+   754     009B  00C1               	movwf	main@ADC2_Digit1+1
    755     009C  081B               	movf	?___lwdiv,w
-   756     009D  00C0               	movwf	main@d3
+   756     009D  00C0               	movwf	main@ADC2_Digit1
    757                           
-   758                           ;main.c: 113:         d4 = ((adcVal % 204)*10 / 204);
+   758                           ;main.c: 124:         ADC2_Digit2 = ((adcVal % 204)*10 / 204);
    759     009E  30CC               	movlw	204
    760     009F  009B               	movwf	___lwdiv@divisor
    761     00A0  3000               	movlw	0
@@ -798,87 +798,87 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    784     00B7  009D               	movwf	___lwdiv@dividend
    785     00B8  21DB               	fcall	___lwdiv
    786     00B9  081C               	movf	?___lwdiv+1,w
-   787     00BA  00C3               	movwf	main@d4+1
+   787     00BA  00C3               	movwf	main@ADC2_Digit2+1
    788     00BB  081B               	movf	?___lwdiv,w
-   789     00BC  00C2               	movwf	main@d4
+   789     00BC  00C2               	movwf	main@ADC2_Digit2
    790                           
-   791                           ;main.c: 115:         Lcd_Clear();
+   791                           ;main.c: 130:         Lcd_Clear();
    792     00BD  237F               	fcall	_Lcd_Clear
    793                           
-   794                           ;main.c: 116:         Lcd_Set_Cursor(1, 1);
+   794                           ;main.c: 131:         Lcd_Set_Cursor(1, 1);
    795     00BE  1283               	bcf	3,5	;RP0=0, select bank0
    796     00BF  0194               	clrf	Lcd_Set_Cursor@b
    797     00C0  0A94               	incf	Lcd_Set_Cursor@b,f
    798     00C1  3001               	movlw	1
    799     00C2  2217               	fcall	_Lcd_Set_Cursor
    800                           
-   801                           ;main.c: 117:         Lcd_Write_Int(d1);
-   802     00C3  083D               	movf	main@d1+1,w
+   801                           ;main.c: 132:         Lcd_Write_Int(ADC1_Digit1);
+   802     00C3  083D               	movf	main@ADC1_Digit1+1,w
    803     00C4  00AB               	movwf	Lcd_Write_Int@a+1
-   804     00C5  083C               	movf	main@d1,w
+   804     00C5  083C               	movf	main@ADC1_Digit1,w
    805     00C6  00AA               	movwf	Lcd_Write_Int@a
    806     00C7  238D               	fcall	_Lcd_Write_Int
    807                           
-   808                           ;main.c: 118:         Lcd_Set_Cursor(1, 2);
+   808                           ;main.c: 133:         Lcd_Set_Cursor(1, 2);
    809     00C8  3002               	movlw	2
    810     00C9  0094               	movwf	Lcd_Set_Cursor@b
    811     00CA  3001               	movlw	1
    812     00CB  2217               	fcall	_Lcd_Set_Cursor
    813                           
-   814                           ;main.c: 119:         Lcd_Write_Char('.');
+   814                           ;main.c: 134:         Lcd_Write_Char('.');
    815     00CC  302E               	movlw	46
    816     00CD  22AC               	fcall	_Lcd_Write_Char
    817                           
-   818                           ;main.c: 120:         Lcd_Set_Cursor(1, 3);
+   818                           ;main.c: 135:         Lcd_Set_Cursor(1, 3);
    819     00CE  3003               	movlw	3
    820     00CF  0094               	movwf	Lcd_Set_Cursor@b
    821     00D0  3001               	movlw	1
    822     00D1  2217               	fcall	_Lcd_Set_Cursor
    823                           
-   824                           ;main.c: 121:         Lcd_Write_Int(d2);
-   825     00D2  083F               	movf	main@d2+1,w
+   824                           ;main.c: 136:         Lcd_Write_Int(ADC1_Digit2);
+   825     00D2  083F               	movf	main@ADC1_Digit2+1,w
    826     00D3  00AB               	movwf	Lcd_Write_Int@a+1
-   827     00D4  083E               	movf	main@d2,w
+   827     00D4  083E               	movf	main@ADC1_Digit2,w
    828     00D5  00AA               	movwf	Lcd_Write_Int@a
    829     00D6  238D               	fcall	_Lcd_Write_Int
    830                           
-   831                           ;main.c: 122:         Lcd_Set_Cursor(1, 6);
+   831                           ;main.c: 137:         Lcd_Set_Cursor(1, 6);
    832     00D7  3006               	movlw	6
    833     00D8  0094               	movwf	Lcd_Set_Cursor@b
    834     00D9  3001               	movlw	1
    835     00DA  2217               	fcall	_Lcd_Set_Cursor
    836                           
-   837                           ;main.c: 123:         Lcd_Write_Int(d3);
-   838     00DB  0841               	movf	main@d3+1,w
+   837                           ;main.c: 138:         Lcd_Write_Int(ADC2_Digit1);
+   838     00DB  0841               	movf	main@ADC2_Digit1+1,w
    839     00DC  00AB               	movwf	Lcd_Write_Int@a+1
-   840     00DD  0840               	movf	main@d3,w
+   840     00DD  0840               	movf	main@ADC2_Digit1,w
    841     00DE  00AA               	movwf	Lcd_Write_Int@a
    842     00DF  238D               	fcall	_Lcd_Write_Int
    843                           
-   844                           ;main.c: 124:         Lcd_Set_Cursor(1, 7);
+   844                           ;main.c: 139:         Lcd_Set_Cursor(1, 7);
    845     00E0  3007               	movlw	7
    846     00E1  0094               	movwf	Lcd_Set_Cursor@b
    847     00E2  3001               	movlw	1
    848     00E3  2217               	fcall	_Lcd_Set_Cursor
    849                           
-   850                           ;main.c: 125:         Lcd_Write_Char('.');
+   850                           ;main.c: 140:         Lcd_Write_Char('.');
    851     00E4  302E               	movlw	46
    852     00E5  22AC               	fcall	_Lcd_Write_Char
    853                           
-   854                           ;main.c: 126:         Lcd_Set_Cursor(1, 8);
+   854                           ;main.c: 141:         Lcd_Set_Cursor(1, 8);
    855     00E6  3008               	movlw	8
    856     00E7  0094               	movwf	Lcd_Set_Cursor@b
    857     00E8  3001               	movlw	1
    858     00E9  2217               	fcall	_Lcd_Set_Cursor
    859                           
-   860                           ;main.c: 127:         Lcd_Write_Int(d4);
-   861     00EA  0843               	movf	main@d4+1,w
+   860                           ;main.c: 142:         Lcd_Write_Int(ADC2_Digit2);
+   861     00EA  0843               	movf	main@ADC2_Digit2+1,w
    862     00EB  00AB               	movwf	Lcd_Write_Int@a+1
-   863     00EC  0842               	movf	main@d4,w
+   863     00EC  0842               	movf	main@ADC2_Digit2,w
    864     00ED  00AA               	movwf	Lcd_Write_Int@a
    865     00EE  238D               	fcall	_Lcd_Write_Int
    866                           
-   867                           ;main.c: 129:         delay_100ms();
+   867                           ;main.c: 144:         delay_100ms();
    868     00EF  23A5               	fcall	_delay_100ms
    869     00F0  2826               	goto	l1531
    870     00F1                     __end_of_main:
@@ -887,7 +887,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    873     02F0                     __ptext1:	
    874 ;; *************** function _welcomeMessage *****************
    875 ;; Defined at:
-   876 ;;		line 48 in file "main.c"
+   876 ;;		line 53 in file "main.c"
    877 ;; Parameters:    Size  Location     Type
    878 ;;		None
    879 ;; Auto vars:     Size  Location     Type
@@ -912,7 +912,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    898 ;;		_Lcd_Clear
    899 ;;		_Lcd_Set_Cursor
    900 ;;		_Lcd_Write_String
-   901 ;;		_delay_1000ms
+   901 ;;		_delay_2000ms
    902 ;;		_strcpy
    903 ;; This function is called by:
    904 ;;		_main
@@ -923,7 +923,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    909                           ;psect for function _welcomeMessage
    910                           
    911                           
-   912                           ;main.c: 50:     char msg[] = "He";
+   912                           ;main.c: 54:     char msg[] = "Hi";
    913                           
    914                           ;incstack = 0
    915                           ; Regs used in _welcomeMessage: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
@@ -934,47 +934,47 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
    920     02F4  0849               	movf	welcomeMessage@F331+2,w
    921     02F5  009C               	movwf	welcomeMessage@msg+2
    922                           
-   923                           ;main.c: 51:     Lcd_Clear();
+   923                           ;main.c: 55:     Lcd_Clear();
    924     02F6  237F               	fcall	_Lcd_Clear
    925                           
-   926                           ;main.c: 52:     Lcd_Set_Cursor(1, 1);
+   926                           ;main.c: 56:     Lcd_Set_Cursor(1, 1);
    927     02F7  1283               	bcf	3,5	;RP0=0, select bank0
    928     02F8  0194               	clrf	Lcd_Set_Cursor@b
    929     02F9  0A94               	incf	Lcd_Set_Cursor@b,f
    930     02FA  3001               	movlw	1
    931     02FB  2217               	fcall	_Lcd_Set_Cursor
    932                           
-   933                           ;main.c: 53:     Lcd_Write_String(msg);
+   933                           ;main.c: 57:     Lcd_Write_String(msg);
    934     02FC  301A               	movlw	(low (welcomeMessage@msg| 0))& (0+255)
    935     02FD  230E               	fcall	_Lcd_Write_String
    936                           
-   937                           ;main.c: 54:     delay_1000ms();
-   938     02FE  2357               	fcall	_delay_1000ms
+   937                           ;main.c: 58:     delay_2000ms();
+   938     02FE  2357               	fcall	_delay_2000ms
    939                           
-   940                           ;main.c: 55:     Lcd_Clear();
+   940                           ;main.c: 59:     Lcd_Clear();
    941     02FF  237F               	fcall	_Lcd_Clear
    942                           
-   943                           ;main.c: 56:     Lcd_Set_Cursor(1, 1);
+   943                           ;main.c: 60:     Lcd_Set_Cursor(1, 1);
    944     0300  1283               	bcf	3,5	;RP0=0, select bank0
    945     0301  0194               	clrf	Lcd_Set_Cursor@b
    946     0302  0A94               	incf	Lcd_Set_Cursor@b,f
    947     0303  3001               	movlw	1
    948     0304  2217               	fcall	_Lcd_Set_Cursor
    949                           
-   950                           ;main.c: 57:     strcpy(msg, "0-5V");
+   950                           ;main.c: 61:     strcpy(msg, "0-5V");
    951     0305  3001               	movlw	(low ((STR_1-__stringbase)| (0+32768)))& (0+255)
    952     0306  0090               	movwf	strcpy@from
    953     0307  301A               	movlw	(low (welcomeMessage@msg| 0))& (0+255)
    954     0308  2328               	fcall	_strcpy
    955                           
-   956                           ;main.c: 59:     Lcd_Write_String(msg);
+   956                           ;main.c: 62:     Lcd_Write_String(msg);
    957     0309  301A               	movlw	(low (welcomeMessage@msg| 0))& (0+255)
    958     030A  230E               	fcall	_Lcd_Write_String
    959                           
-   960                           ;main.c: 60:     delay_1000ms();
-   961     030B  2357               	fcall	_delay_1000ms
+   960                           ;main.c: 63:     delay_2000ms();
+   961     030B  2357               	fcall	_delay_2000ms
    962                           
-   963                           ;main.c: 61:     Lcd_Clear();
+   963                           ;main.c: 64:     Lcd_Clear();
    964     030C  237F               	fcall	_Lcd_Clear
    965     030D  0008               	return
    966     030E                     __end_of_welcomeMessage:
@@ -1053,9 +1053,9 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
   1039                           
   1040                           	psect	text3
   1041     0357                     __ptext3:	
-  1042 ;; *************** function _delay_1000ms *****************
+  1042 ;; *************** function _delay_2000ms *****************
   1043 ;; Defined at:
-  1044 ;;		line 28 in file "main.c"
+  1044 ;;		line 29 in file "main.c"
   1045 ;; Parameters:    Size  Location     Type
   1046 ;;		None
   1047 ;; Auto vars:     Size  Location     Type
@@ -1083,30 +1083,30 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
   1069 ;; This function uses a non-reentrant model
   1070 ;;
   1071                           
-  1072     0357                     _delay_1000ms:	
-  1073                           ;psect for function _delay_1000ms
+  1072     0357                     _delay_2000ms:	
+  1073                           ;psect for function _delay_2000ms
   1074                           
   1075                           
-  1076                           ;main.c: 29:     for (int i = 0; i < 20; i++) {
+  1076                           ;main.c: 30:     for (int i = 0; i < 20; i++) {
   1077                           
   1078                           ;incstack = 0
-  1079                           ; Regs used in _delay_1000ms: [wreg+status,2+status,0+btemp+1+pclath+cstack]
-  1080     0357  0192               	clrf	delay_1000ms@i
-  1081     0358  0193               	clrf	delay_1000ms@i+1
+  1079                           ; Regs used in _delay_2000ms: [wreg+status,2+status,0+btemp+1+pclath+cstack]
+  1080     0357  0192               	clrf	delay_2000ms@i
+  1081     0358  0193               	clrf	delay_2000ms@i+1
   1082     0359                     l1263:
   1083                           
-  1084                           ;main.c: 30:         delay_100ms();
+  1084                           ;main.c: 31:         delay_100ms();
   1085     0359  23A5               	fcall	_delay_100ms
   1086                           
-  1087                           ;main.c: 31:     }
+  1087                           ;main.c: 32:     }
   1088     035A  3001               	movlw	1
   1089     035B  1283               	bcf	3,5	;RP0=0, select bank0
-  1090     035C  0792               	addwf	delay_1000ms@i,f
+  1090     035C  0792               	addwf	delay_2000ms@i,f
   1091     035D  1803               	skipnc
-  1092     035E  0A93               	incf	delay_1000ms@i+1,f
+  1092     035E  0A93               	incf	delay_2000ms@i+1,f
   1093     035F  3000               	movlw	0
-  1094     0360  0793               	addwf	delay_1000ms@i+1,f
-  1095     0361  0813               	movf	delay_1000ms@i+1,w
+  1094     0360  0793               	addwf	delay_2000ms@i+1,f
+  1095     0361  0813               	movf	delay_2000ms@i+1,w
   1096     0362  3A80               	xorlw	128
   1097     0363  00CF               	movwf	79
   1098     0364  3080               	movlw	128
@@ -1114,12 +1114,12 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
   1100     0366  1D03               	skipz
   1101     0367  2B6A               	goto	u585
   1102     0368  3014               	movlw	20
-  1103     0369  0212               	subwf	delay_1000ms@i,w
+  1103     0369  0212               	subwf	delay_2000ms@i,w
   1104     036A                     u585:
   1105     036A  1803               	btfsc	3,0
   1106     036B  0008               	return
   1107     036C  2B59               	goto	l1263
-  1108     036D                     __end_of_delay_1000ms:
+  1108     036D                     __end_of_delay_2000ms:
   1109                           
   1110                           	psect	text4
   1111     03A5                     __ptext4:	
@@ -1149,7 +1149,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
   1135 ;; This function calls:
   1136 ;;		Nothing
   1137 ;; This function is called by:
-  1138 ;;		_delay_1000ms
+  1138 ;;		_delay_2000ms
   1139 ;;		_main
   1140 ;; This function uses a non-reentrant model
   1141 ;;
@@ -2666,7 +2666,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
   2648     03B0                     __ptext19:	
   2649 ;; *************** function _isr *****************
   2650 ;; Defined at:
-  2651 ;;		line 35 in file "main.c"
+  2651 ;;		line 42 in file "main.c"
   2652 ;; Parameters:    Size  Location     Type
   2653 ;;		None
   2654 ;; Auto vars:     Size  Location     Type
@@ -2698,13 +2698,13 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og9
   2680                           ;psect for function _isr
   2681                           
   2682                           
-  2683                           ;main.c: 37:     INTCONbits.INTF = 0;
+  2683                           ;main.c: 43:     INTCONbits.INTF = 0;
   2684     03B0  108B               	bcf	11,1	;volatile
   2685                           
-  2686                           ;main.c: 39:     toggleHold = ~toggleHold;
+  2686                           ;main.c: 44:     toggleHold = ~toggleHold;
   2687     03B1  09C6               	comf	_toggleHold,f	;volatile
   2688                           
-  2689                           ;main.c: 40:     delay_100ms();
+  2689                           ;main.c: 45:     delay_100ms();
   2690     03B2  23BB               	fcall	i1_delay_100ms
   2691     03B3  1283               	bcf	3,5	;RP0=0, select bank0
   2692     03B4  080F               	movf	??_isr+1,w
@@ -2850,7 +2850,7 @@ Critical Paths under _main in BANK0
 
     _main->_Lcd_Write_Int
     _welcomeMessage->_Lcd_Set_Cursor
-    _delay_1000ms->_delay_100ms
+    _delay_2000ms->_delay_100ms
     _Lcd_Set_Cursor->_Lcd_Cmd
     _Lcd_Clear->_Lcd_Cmd
     ___wmul->___lwmod
@@ -2891,13 +2891,13 @@ Call Graph Tables:
                           _Lcd_Clear
                      _Lcd_Set_Cursor
                    _Lcd_Write_String
-                       _delay_1000ms
+                       _delay_2000ms
                              _strcpy
  ---------------------------------------------------------------------------------
  (2) _strcpy                                               3     2      1     184
                                               4 BANK0      3     2      1
  ---------------------------------------------------------------------------------
- (2) _delay_1000ms                                         2     2      0      46
+ (2) _delay_2000ms                                         2     2      0      46
                                               6 BANK0      2     2      0
                         _delay_100ms
  ---------------------------------------------------------------------------------
@@ -3006,7 +3006,7 @@ Call Graph Tables:
      _Lcd_Clear
      _Lcd_Set_Cursor
      _Lcd_Write_String
-     _delay_1000ms
+     _delay_2000ms
        _delay_100ms
      _strcpy
 
@@ -3032,7 +3032,7 @@ EEDATA              40      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.41 build 20230208172133 
-Symbol Table                                                                                   Tue May 02 21:02:17 2023
+Symbol Table                                                                                   Wed May 03 13:16:23 2023
 
                        pc 0002                        l90 0350                        l91 0351  
                       l92 0355                        l86 0346                        l87 0347  
@@ -3052,7 +3052,7 @@ Symbol Table                                                                    
                      u857 0195                       u947 0377                       u867 019B  
                      u877 01AA                       u797 03AA                       u887 01BC  
                      u897 02C1                       _isr 03B0                       fsr0 0004  
-                     indf 0000      __end_of_delay_1000ms 036D                      l1221 01F1  
+                     indf 0000      __end_of_delay_2000ms 036D                      l1221 01F1  
                     l1231 0212                      l1305 032B                      l1227 0207  
                     l1219 01E3                      l1243 024F                      l1245 025D  
                     l1253 0276                      l1309 00F6                      l1319 0111  
@@ -3074,19 +3074,19 @@ Symbol Table                                                                    
             readADC2@bits 0016              readADC1@volt 0014              readADC2@volt 0014  
         ??_welcomeMessage 0000                    _adcVal 0044          __end_of_readADC1 01DB  
         __end_of_readADC2 0190                    ___wmul 02CF                 ??___lwdiv 0000  
-               ??___lwmod 0000                    main@d1 003C                    main@d2 003E  
-                  main@d3 0040                    main@d4 0042                    _strcpy 0328  
-   __end_of_Lcd_Write_Int 039A                    saved_w 004E            ?i1_delay_100ms 000C  
-         Lcd_Set_Cursor@a 0016           Lcd_Set_Cursor@b 0014           Lcd_Set_Cursor@y 0018  
-         Lcd_Set_Cursor@z 0017   __end_of__initialization 0015         __end_of_Lcd_Clear 038D  
-            _delay_1000ms 0357            __pcstackCOMMON 0000              __pidataBANK0 03C5  
-          _Lcd_Set_Cursor 0217            _OPTION_REGbits 0081                 ?_Lcd_Init 000C  
-               ?_Lcd_Port 000C            Lcd_Write_Int@a 002A                __pbssBANK0 0044  
-           delay_1000ms@i 0012                __pmaintext 0017                   ?___wmul 0015  
-              __pintentry 0004    __end_of_Lcd_Set_Cursor 0249                   ?_strcpy 0010  
-         ??i1_delay_100ms 000C                ??_Lcd_Init 0014                ??_Lcd_Port 0000  
-              __stringtab 039A                 ?_readADC1 0010                 ?_readADC2 0010  
-          _Lcd_Write_Char 02AC                   _Lcd_Cmd 036D                   ___lwdiv 01DB  
+               ??___lwmod 0000                    _strcpy 0328     __end_of_Lcd_Write_Int 039A  
+                  saved_w 004E            ?i1_delay_100ms 000C           Lcd_Set_Cursor@a 0016  
+         Lcd_Set_Cursor@b 0014           Lcd_Set_Cursor@y 0018           Lcd_Set_Cursor@z 0017  
+ __end_of__initialization 0015         __end_of_Lcd_Clear 038D              _delay_2000ms 0357  
+          __pcstackCOMMON 0000              __pidataBANK0 03C5            _Lcd_Set_Cursor 0217  
+          _OPTION_REGbits 0081                 ?_Lcd_Init 000C                 ?_Lcd_Port 000C  
+          Lcd_Write_Int@a 002A                __pbssBANK0 0044             delay_2000ms@i 0012  
+              __pmaintext 0017                   ?___wmul 0015                __pintentry 0004  
+  __end_of_Lcd_Set_Cursor 0249                   ?_strcpy 0010           ??i1_delay_100ms 000C  
+              ??_Lcd_Init 0014                ??_Lcd_Port 0000                __stringtab 039A  
+               ?_readADC1 0010                 ?_readADC2 0010            _Lcd_Write_Char 02AC  
+                 _Lcd_Cmd 036D           main@ADC1_Digit1 003C           main@ADC1_Digit2 003E  
+         main@ADC2_Digit1 0040           main@ADC2_Digit2 0042                   ___lwdiv 01DB  
                  ___lwmod 0249           ?_Lcd_Set_Cursor 0014                   __ptext1 02F0  
                  __ptext2 0328                   __ptext3 0357                   __ptext4 03A5  
                  __ptext5 0217                   __ptext6 037F                   __ptext7 0145  
@@ -3108,13 +3108,13 @@ Symbol Table                                                                    
           readADC1@rxData 0017               __stringbase 039F         ___wmul@multiplier 0015  
           readADC2@rxData 0017            ?_Lcd_Write_Int 002A          ??_Lcd_Write_Char 0011  
                 _Lcd_Init 027B                  _Lcd_Port 0340  __end_of_Lcd_Write_String 0328  
-           ?_delay_1000ms 000C        __end_of__stringtab 03A0            _welcomeMessage 02F0  
+           ?_delay_2000ms 000C        __end_of__stringtab 03A0            _welcomeMessage 02F0  
          ___lwdiv@divisor 001B           ___lwdiv@counter 0021                  __ptext10 038D  
                 __ptext11 00F1                  __ptext20 03BB                  __ptext12 0249  
                 __ptext13 01DB                  __ptext14 030E                  __ptext15 02AC  
                 __ptext16 027B                  __ptext17 036D                  __ptext18 0340  
                 __ptext19 03B0                  _readADC1 0190                  _readADC2 0145  
-              strcpy@from 0010            ??_delay_1000ms 0000           ??_Lcd_Write_Int 0000  
+              strcpy@from 0010            ??_delay_2000ms 0000           ??_Lcd_Write_Int 0000  
   __end_of_welcomeMessage 030E                _INTCONbits 000B              ?_delay_100ms 000C  
       Lcd_Write_Char@temp 0012                  intlevel1 0000          ___lwmod@dividend 0012  
                stringcode 039A        Lcd_Set_Cursor@temp 0019           ?_welcomeMessage 000C  

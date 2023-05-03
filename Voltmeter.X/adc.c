@@ -2,7 +2,7 @@
 #include <xc.h>
 #include <stdlib.h>
 
-// Read a single sample from the ADC
+// Read a single sample from the ADC 1
 
 unsigned int readADC1() {
     unsigned char bits;
@@ -45,6 +45,8 @@ unsigned int readADC1() {
     volt = (rxData << 2);
     return volt;
 }
+
+// Read a single sample from the ADC 2
 
 unsigned int readADC2() {
     unsigned char bits;

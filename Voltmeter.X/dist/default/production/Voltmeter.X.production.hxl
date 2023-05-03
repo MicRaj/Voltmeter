@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\mrajz\AppData\Local\Temp\xcAs44o.\driver_tmp_3.o
+ C:\Users\mrajz\AppData\Local\Temp\xcBsbok.1\driver_tmp_3.o
  -Odist/default/production\Voltmeter.X.production.hex
  -logfile=dist/default/production\Voltmeter.X.production.hxl
  -format=INHX032
@@ -9,9 +9,9 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 1h		(C:\Users\mrajz\AppData\Local\Temp\xcAs44o.\driver_tmp_3.o)
-  8h - 78Fh		(C:\Users\mrajz\AppData\Local\Temp\xcAs44o.\driver_tmp_3.o)
-  400Eh - 400Fh		(C:\Users\mrajz\AppData\Local\Temp\xcAs44o.\driver_tmp_3.o)
+  0h - 1h		(C:\Users\mrajz\AppData\Local\Temp\xcBsbok.1\driver_tmp_3.o)
+  8h - 78Fh		(C:\Users\mrajz\AppData\Local\Temp\xcBsbok.1\driver_tmp_3.o)
+  400Eh - 400Fh		(C:\Users\mrajz\AppData\Local\Temp\xcBsbok.1\driver_tmp_3.o)
  Unused ranges:
   2h - 7h
   790h - 400Dh
@@ -19,7 +19,7 @@
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\mrajz\AppData\Local\Temp\xcAs44o.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\mrajz\AppData\Local\Temp\xcBsbok.1\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
