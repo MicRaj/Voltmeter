@@ -17,18 +17,9 @@ unsigned short int adcVal = 0; // Storage for the raw ADC value
 unsigned volatile char toggleHold = 0b0; // global variable for toggle button
 // =====================================================
 
-// ISR
-// =====================================================
-void __interrupt() isr() {
-    INTCONbits.INTF = 0; // reset interrupt flag
-    toggleHold = ~toggleHold; // invert toggleHold variable
-    delay_100ms();
-    return;
-}
-// =====================================================
-
 // delay functions
 // =====================================================
+
 void delay_100ms() {
     __delay_ms(100);
     return;
@@ -44,8 +35,21 @@ void delay_2000ms() {
 // 2000ms delay function - just loops the delay 100ms 20 times
 // =====================================================
 
+
+// ISR
+// =====================================================
+
+void __interrupt() isr() {
+    INTCONbits.INTF = 0; // reset interrupt flag
+    toggleHold = ~toggleHold; // invert toggleHold variable
+    delay_100ms();
+    return;
+}
+// =====================================================
+
 // welcome function
 // =====================================================
+
 void welcomeMessage(void) {
     char msg[] = "Hi"; // welcome message
     Lcd_Clear();
@@ -63,6 +67,7 @@ void welcomeMessage(void) {
 
 // main
 // =====================================================
+
 void main(void) {
     // main initialisation
     // ----------------------------
@@ -73,9 +78,8 @@ void main(void) {
     CLK = 0;
     // Set the R/W LCD pin to Write
     RW = 0;
-    // Init the LCD
     // ----------------------------
-
+    
     //interrupt set
     // ----------------------------
     // Interrupt on the rising edge
@@ -93,7 +97,9 @@ void main(void) {
     unsigned short int ADC2_Digit1;
     unsigned short int ADC2_Digit2;
     while (1) {
-        while (toggleHold) {
+        while (toggleHold) { // Hold toggled on
+            // writing to LCD
+            // ----------------------------
             Lcd_Set_Cursor(1, 1);
             Lcd_Write_Int(ADC1_Digit1);
             Lcd_Set_Cursor(1, 2);
@@ -106,6 +112,7 @@ void main(void) {
             Lcd_Write_Char('.');
             Lcd_Set_Cursor(1, 8);
             Lcd_Write_Int(ADC2_Digit2);
+            // ----------------------------
         }
         // reading ADCs
         // ----------------------------
